@@ -15,4 +15,4 @@ The SIMPLE algorithm is used, whereby per every outer iteration, the x and y
 momentum predictors are solved. Then an inner loop is run to get a converged pressure correction, after which the pressure correction is applied with under-relaxation to get the corrected velocity field and flux. The new arrays are then made into new arrays and the outer loop continues iterating (point Jacobi).
 
 Two wall functions were used, one which was C0 continuous, and the other which is C2 continuous. Additionally, the python scripts can be ran to visualise the mesh and velocity field. The simulation was ran on an HPC, using
-20 cores, and finished within ~5 minutes. 
+20 cores, and finished within ~5 minutes. The top and bottom walls are stationary with no-slip. The inlet is a total pressure inlet condition and the outlet is a static pressure inlet condition.
