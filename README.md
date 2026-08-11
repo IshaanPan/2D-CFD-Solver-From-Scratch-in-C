@@ -8,8 +8,7 @@ As of 11 August, 2026: the main physics loops and functions have been implemente
 There were array indexing issues, and the explicit handling of the boundary conditions had some inconsistencies between functions, which resulted in mass not being conserved and the solver diverging. Those issues
 were fixed and now the solver converges to residual tolerances lower than 1e-4 on a 100 x 100 grid.
 
-This code uses a non-orthogonal, skewed, body-fitted, structured, collocated grid. The Rhie and Chow interpolation is used to prevent checkerboarding. Physics was applied by basing the equations on the YouTube videos from
-FluidMechanics101 (namely: https://www.youtube.com/watch?v=yqZ59Xn_aF8&t=1231s and https://www.youtube.com/watch?v=PmEUiUB8ETk&t=1569s). The convective term uses upwinding and the diffusive term uses central differencing, with a deferred correction approach, to ensure correct handling of gradients, while maintaining a strong diagonal matrix to be solved. 
+This code uses a non-orthogonal, skewed, body-fitted, structured, collocated grid. 1D flattened arrays are used to store field information, with a column-major indexing approach utilised.The Rhie and Chow interpolation is used to prevent checkerboarding. Physics was applied by basing the equations on the YouTube videos from FluidMechanics101 (namely: https://www.youtube.com/watch?v=yqZ59Xn_aF8&t=1231s and https://www.youtube.com/watch?v=PmEUiUB8ETk&t=1569s). The convective term uses upwinding and the diffusive term uses central differencing, with a deferred correction approach, to ensure correct handling of gradients, while maintaining a strong diagonal matrix to be solved. 
 
 
 The SIMPLE algorithm is used, whereby per every outer iteration, the x and y 
