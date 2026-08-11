@@ -1,0 +1,935 @@
+Lmod has detected the following error: These module(s) or extension(s) exist
+but cannot be loaded as requested: "gcc"
+   Try: "module spider gcc" to see how to load the module(s).
+
+
+
+Compiling the OpenMP CFD solver...
+physics.c: In function ‘diffusive_gradients’:
+physics.c:22:8: warning: unused variable ‘bottom_cell’ [-Wunused-variable]
+    int bottom_cell=cell_number-1;
+        ^~~~~~~~~~~
+physics.c:31:8: warning: unused variable ‘top_cell’ [-Wunused-variable]
+    int top_cell=cell_number+1;
+        ^~~~~~~~
+physics.c: In function ‘initialise_field’:
+physics.c:166:7: warning: unused variable ‘i_cell’ [-Wunused-variable]
+   int i_cell=cell_number/Ny;
+       ^~~~~~
+physics.c: In function ‘determine_pressure_correction’:
+physics.c:1622:20: warning: unused variable ‘west_face_velocity_v’ [-Wunused-variable]
+             double west_face_velocity_v = 0.0;
+                    ^~~~~~~~~~~~~~~~~~~~
+physics.c:1653:20: warning: unused variable ‘east_face_velocity_v’ [-Wunused-variable]
+             double east_face_velocity_v = field->vel_v_old[cell_number];
+                    ^~~~~~~~~~~~~~~~~~~~
+physics.c:1685:20: warning: unused variable ‘west_face_velocity_v’ [-Wunused-variable]
+             double west_face_velocity_v = 0.0;
+                    ^~~~~~~~~~~~~~~~~~~~
+physics.c:1712:20: warning: unused variable ‘west_face_velocity_v’ [-Wunused-variable]
+             double west_face_velocity_v = 0.0;
+                    ^~~~~~~~~~~~~~~~~~~~
+physics.c:1741:20: warning: unused variable ‘east_face_velocity_v’ [-Wunused-variable]
+             double east_face_velocity_v = field->vel_v_old[cell_number];
+                    ^~~~~~~~~~~~~~~~~~~~
+physics.c:1769:20: warning: unused variable ‘east_face_velocity_v’ [-Wunused-variable]
+             double east_face_velocity_v = field->vel_v_old[cell_number];
+                    ^~~~~~~~~~~~~~~~~~~~
+domain.c: In function ‘build_mesh’:
+domain.c:94:10: warning: unused variable ‘top_wall_xx’ [-Wunused-variable]
+  double* top_wall_xx = top_wall->pos_x;
+          ^~~~~~~~~~~
+Starting CFD simulation...
+Outer Iter 0 | Max Net Mass Imbalance: 1.864185e-04 at cell 2619
+Iter 0 | Mass Res: 3.857752e-02 | U Res: 2.555829e-02 | V Res: 7.250321e-03 |
+Outer Iter 1 | Max Net Mass Imbalance: 2.502942e-04 at cell 2576
+Iter 1 | Mass Res: 5.009369e-02 | U Res: 1.959965e-02 | V Res: 6.948257e-03 |
+Outer Iter 2 | Max Net Mass Imbalance: 2.326205e-04 at cell 2576
+Iter 2 | Mass Res: 5.817991e-02 | U Res: 2.140696e-02 | V Res: 9.824700e-03 |
+Outer Iter 3 | Max Net Mass Imbalance: 2.347375e-04 at cell 2278
+Iter 3 | Mass Res: 7.379138e-02 | U Res: 2.557759e-02 | V Res: 1.130575e-02 |
+Outer Iter 4 | Max Net Mass Imbalance: 2.610854e-04 at cell 2377
+Iter 4 | Mass Res: 8.030434e-02 | U Res: 2.553679e-02 | V Res: 1.343286e-02 |
+Outer Iter 5 | Max Net Mass Imbalance: 2.544340e-04 at cell 2278
+Iter 5 | Mass Res: 8.481574e-02 | U Res: 3.502017e-02 | V Res: 1.767718e-02 |
+Outer Iter 6 | Max Net Mass Imbalance: 3.196707e-04 at cell 2179
+Iter 6 | Mass Res: 9.472252e-02 | U Res: 3.749296e-02 | V Res: 2.169840e-02 |
+Outer Iter 7 | Max Net Mass Imbalance: 3.328560e-04 at cell 2278
+Iter 7 | Mass Res: 1.014679e-01 | U Res: 3.631960e-02 | V Res: 2.273068e-02 |
+Outer Iter 8 | Max Net Mass Imbalance: 3.008948e-04 at cell 2377
+Iter 8 | Mass Res: 1.020907e-01 | U Res: 3.832340e-02 | V Res: 2.458895e-02 |
+Outer Iter 9 | Max Net Mass Imbalance: 3.188185e-04 at cell 2278
+Iter 9 | Mass Res: 1.053854e-01 | U Res: 4.659478e-02 | V Res: 2.336320e-02 |
+Outer Iter 10 | Max Net Mass Imbalance: 3.344982e-04 at cell 2278
+Iter 10 | Mass Res: 1.075713e-01 | U Res: 4.503723e-02 | V Res: 2.083342e-02 |
+Outer Iter 11 | Max Net Mass Imbalance: 3.175581e-04 at cell 2278
+Iter 11 | Mass Res: 1.052500e-01 | U Res: 4.033959e-02 | V Res: 1.767230e-02 |
+Outer Iter 12 | Max Net Mass Imbalance: 2.601319e-04 at cell 2278
+Iter 12 | Mass Res: 9.817881e-02 | U Res: 3.887900e-02 | V Res: 1.635069e-02 |
+Outer Iter 13 | Max Net Mass Imbalance: 2.251498e-04 at cell 2278
+Iter 13 | Mass Res: 9.056986e-02 | U Res: 3.899506e-02 | V Res: 1.501906e-02 |
+Outer Iter 14 | Max Net Mass Imbalance: 1.779251e-04 at cell 2179
+Iter 14 | Mass Res: 8.056719e-02 | U Res: 3.994713e-02 | V Res: 1.431672e-02 |
+Outer Iter 15 | Max Net Mass Imbalance: 1.442106e-04 at cell 2278
+Iter 15 | Mass Res: 7.016869e-02 | U Res: 3.414011e-02 | V Res: 1.235998e-02 |
+Outer Iter 16 | Max Net Mass Imbalance: 1.200283e-04 at cell 2179
+Iter 16 | Mass Res: 6.056368e-02 | U Res: 2.719791e-02 | V Res: 9.803316e-03 |
+Outer Iter 17 | Max Net Mass Imbalance: 1.043117e-04 at cell 2278
+Iter 17 | Mass Res: 5.075090e-02 | U Res: 2.227403e-02 | V Res: 8.326547e-03 |
+Outer Iter 18 | Max Net Mass Imbalance: 8.304358e-05 at cell 2278
+Iter 18 | Mass Res: 4.145116e-02 | U Res: 2.012261e-02 | V Res: 7.821424e-03 |
+Outer Iter 19 | Max Net Mass Imbalance: 7.033438e-05 at cell 2278
+Iter 19 | Mass Res: 3.268911e-02 | U Res: 1.770306e-02 | V Res: 7.623377e-03 |
+Outer Iter 20 | Max Net Mass Imbalance: 5.443029e-05 at cell 2278
+Iter 20 | Mass Res: 2.423729e-02 | U Res: 1.606280e-02 | V Res: 6.987558e-03 |
+Outer Iter 21 | Max Net Mass Imbalance: 3.570180e-05 at cell 2278
+Iter 21 | Mass Res: 1.607399e-02 | U Res: 1.497352e-02 | V Res: 6.631579e-03 |
+Outer Iter 22 | Max Net Mass Imbalance: 2.270815e-05 at cell 2278
+Iter 22 | Mass Res: 8.854936e-03 | U Res: 1.388915e-02 | V Res: 6.320280e-03 |
+Outer Iter 23 | Max Net Mass Imbalance: 9.922424e-06 at cell 2278
+Iter 23 | Mass Res: 2.391901e-03 | U Res: 1.273625e-02 | V Res: 6.076357e-03 |
+Outer Iter 24 | Max Net Mass Imbalance: 7.402229e-06 at cell 2575
+Iter 24 | Mass Res: 3.215038e-03 | U Res: 1.178881e-02 | V Res: 5.799673e-03 |
+Outer Iter 25 | Max Net Mass Imbalance: 1.611505e-05 at cell 5545
+Iter 25 | Mass Res: 7.815707e-03 | U Res: 1.111565e-02 | V Res: 5.523822e-03 |
+Outer Iter 26 | Max Net Mass Imbalance: 2.364608e-05 at cell 5545
+Iter 26 | Mass Res: 1.135989e-02 | U Res: 1.030091e-02 | V Res: 5.338581e-03 |
+Outer Iter 27 | Max Net Mass Imbalance: 2.931508e-05 at cell 5545
+Iter 27 | Mass Res: 1.419759e-02 | U Res: 9.504857e-03 | V Res: 5.133291e-03 |
+Outer Iter 28 | Max Net Mass Imbalance: 3.338953e-05 at cell 5545
+Iter 28 | Mass Res: 1.601129e-02 | U Res: 8.979373e-03 | V Res: 4.980550e-03 |
+Outer Iter 29 | Max Net Mass Imbalance: 3.578738e-05 at cell 5743
+Iter 29 | Mass Res: 1.698604e-02 | U Res: 8.520750e-03 | V Res: 4.862181e-03 |
+Outer Iter 30 | Max Net Mass Imbalance: 3.672927e-05 at cell 5743
+Iter 30 | Mass Res: 1.737738e-02 | U Res: 8.239031e-03 | V Res: 4.820502e-03 |
+Outer Iter 31 | Max Net Mass Imbalance: 3.635279e-05 at cell 5743
+Iter 31 | Mass Res: 1.706304e-02 | U Res: 7.981852e-03 | V Res: 4.778311e-03 |
+Outer Iter 32 | Max Net Mass Imbalance: 3.483689e-05 at cell 5743
+Iter 32 | Mass Res: 1.630201e-02 | U Res: 7.682688e-03 | V Res: 4.760503e-03 |
+Outer Iter 33 | Max Net Mass Imbalance: 3.244844e-05 at cell 5743
+Iter 33 | Mass Res: 1.533933e-02 | U Res: 7.427015e-03 | V Res: 4.573946e-03 |
+Outer Iter 34 | Max Net Mass Imbalance: 2.948215e-05 at cell 5743
+Iter 34 | Mass Res: 1.386246e-02 | U Res: 7.201074e-03 | V Res: 4.641743e-03 |
+Outer Iter 35 | Max Net Mass Imbalance: 2.605507e-05 at cell 5743
+Iter 35 | Mass Res: 1.234399e-02 | U Res: 7.055587e-03 | V Res: 4.453011e-03 |
+Outer Iter 36 | Max Net Mass Imbalance: 2.240425e-05 at cell 5743
+Iter 36 | Mass Res: 1.061783e-02 | U Res: 6.879074e-03 | V Res: 4.482280e-03 |
+Outer Iter 37 | Max Net Mass Imbalance: 1.885325e-05 at cell 4217
+Iter 37 | Mass Res: 8.908088e-03 | U Res: 6.755739e-03 | V Res: 4.357390e-03 |
+Outer Iter 38 | Max Net Mass Imbalance: 1.561324e-05 at cell 4215
+Iter 38 | Mass Res: 7.198494e-03 | U Res: 6.623181e-03 | V Res: 4.317037e-03 |
+Outer Iter 39 | Max Net Mass Imbalance: 1.252134e-05 at cell 4107
+Iter 39 | Mass Res: 5.578989e-03 | U Res: 6.514323e-03 | V Res: 4.255660e-03 |
+Outer Iter 40 | Max Net Mass Imbalance: 9.863775e-06 at cell 4103
+Iter 40 | Mass Res: 4.090310e-03 | U Res: 6.408663e-03 | V Res: 4.194714e-03 |
+Outer Iter 41 | Max Net Mass Imbalance: 7.416878e-06 at cell 4099
+Iter 41 | Mass Res: 2.751524e-03 | U Res: 6.309428e-03 | V Res: 4.139048e-03 |
+Outer Iter 42 | Max Net Mass Imbalance: 5.631691e-06 at cell 2875
+Iter 42 | Mass Res: 1.633765e-03 | U Res: 6.215758e-03 | V Res: 4.087004e-03 |
+Outer Iter 43 | Max Net Mass Imbalance: 4.214784e-06 at cell 2779
+Iter 43 | Mass Res: 1.119505e-03 | U Res: 6.123058e-03 | V Res: 4.033944e-03 |
+Outer Iter 44 | Max Net Mass Imbalance: 2.981990e-06 at cell 2877
+Iter 44 | Mass Res: 1.061768e-03 | U Res: 6.032430e-03 | V Res: 3.976937e-03 |
+Outer Iter 45 | Max Net Mass Imbalance: 3.351920e-06 at cell 7160
+Iter 45 | Mass Res: 1.190329e-03 | U Res: 5.941698e-03 | V Res: 3.927406e-03 |
+Outer Iter 46 | Max Net Mass Imbalance: 3.980208e-06 at cell 6884
+Iter 46 | Mass Res: 1.352055e-03 | U Res: 5.849699e-03 | V Res: 3.865964e-03 |
+Outer Iter 47 | Max Net Mass Imbalance: 4.312147e-06 at cell 6786
+Iter 47 | Mass Res: 1.466323e-03 | U Res: 5.754468e-03 | V Res: 3.805509e-03 |
+Outer Iter 48 | Max Net Mass Imbalance: 4.351675e-06 at cell 6684
+Iter 48 | Mass Res: 1.490897e-03 | U Res: 5.660598e-03 | V Res: 3.749778e-03 |
+Outer Iter 49 | Max Net Mass Imbalance: 4.142357e-06 at cell 6682
+Iter 49 | Mass Res: 1.421547e-03 | U Res: 5.564381e-03 | V Res: 3.678967e-03 |
+Outer Iter 50 | Max Net Mass Imbalance: 3.717468e-06 at cell 6684
+Iter 50 | Mass Res: 1.268835e-03 | U Res: 5.467002e-03 | V Res: 3.623538e-03 |
+Outer Iter 51 | Max Net Mass Imbalance: 3.127011e-06 at cell 6686
+Iter 51 | Mass Res: 1.056443e-03 | U Res: 5.369970e-03 | V Res: 3.552950e-03 |
+Outer Iter 52 | Max Net Mass Imbalance: 2.418620e-06 at cell 6780
+Iter 52 | Mass Res: 8.191330e-04 | U Res: 5.271961e-03 | V Res: 3.492794e-03 |
+Outer Iter 53 | Max Net Mass Imbalance: 1.662613e-06 at cell 6928
+Iter 53 | Mass Res: 6.010389e-04 | U Res: 5.174894e-03 | V Res: 3.424167e-03 |
+Outer Iter 54 | Max Net Mass Imbalance: 1.548275e-06 at cell 3175
+Iter 54 | Mass Res: 4.563754e-04 | U Res: 5.077428e-03 | V Res: 3.361033e-03 |
+Outer Iter 55 | Max Net Mass Imbalance: 1.925309e-06 at cell 3175
+Iter 55 | Mass Res: 4.732153e-04 | U Res: 4.982048e-03 | V Res: 3.296538e-03 |
+Outer Iter 56 | Max Net Mass Imbalance: 2.481948e-06 at cell 4087
+Iter 56 | Mass Res: 7.909554e-04 | U Res: 4.886376e-03 | V Res: 3.231394e-03 |
+Outer Iter 57 | Max Net Mass Imbalance: 3.043780e-06 at cell 4089
+Iter 57 | Mass Res: 1.129997e-03 | U Res: 4.794437e-03 | V Res: 3.171207e-03 |
+Outer Iter 58 | Max Net Mass Imbalance: 3.561120e-06 at cell 4093
+Iter 58 | Mass Res: 1.437793e-03 | U Res: 4.702695e-03 | V Res: 3.106786e-03 |
+Outer Iter 59 | Max Net Mass Imbalance: 4.025377e-06 at cell 4095
+Iter 59 | Mass Res: 1.705268e-03 | U Res: 4.615651e-03 | V Res: 3.050088e-03 |
+Outer Iter 60 | Max Net Mass Imbalance: 4.455909e-06 at cell 4219
+Iter 60 | Mass Res: 1.930002e-03 | U Res: 4.529283e-03 | V Res: 2.987329e-03 |
+Outer Iter 61 | Max Net Mass Imbalance: 4.836014e-06 at cell 4219
+Iter 61 | Mass Res: 2.107450e-03 | U Res: 4.448295e-03 | V Res: 2.934067e-03 |
+Outer Iter 62 | Max Net Mass Imbalance: 5.114848e-06 at cell 4219
+Iter 62 | Mass Res: 2.239321e-03 | U Res: 4.368206e-03 | V Res: 2.873460e-03 |
+Outer Iter 63 | Max Net Mass Imbalance: 5.320410e-06 at cell 4217
+Iter 63 | Mass Res: 2.324803e-03 | U Res: 4.293929e-03 | V Res: 2.824089e-03 |
+Outer Iter 64 | Max Net Mass Imbalance: 5.443374e-06 at cell 4325
+Iter 64 | Mass Res: 2.368543e-03 | U Res: 4.220517e-03 | V Res: 2.766292e-03 |
+Outer Iter 65 | Max Net Mass Imbalance: 5.481556e-06 at cell 4325
+Iter 65 | Mass Res: 2.372464e-03 | U Res: 4.152989e-03 | V Res: 2.720263e-03 |
+Outer Iter 66 | Max Net Mass Imbalance: 5.446445e-06 at cell 4323
+Iter 66 | Mass Res: 2.342662e-03 | U Res: 4.086241e-03 | V Res: 2.665529e-03 |
+Outer Iter 67 | Max Net Mass Imbalance: 5.349574e-06 at cell 4323
+Iter 67 | Mass Res: 2.282767e-03 | U Res: 4.025172e-03 | V Res: 2.622333e-03 |
+Outer Iter 68 | Max Net Mass Imbalance: 5.185539e-06 at cell 4323
+Iter 68 | Mass Res: 2.199113e-03 | U Res: 3.964852e-03 | V Res: 2.571432e-03 |
+Outer Iter 69 | Max Net Mass Imbalance: 5.000722e-06 at cell 4321
+Iter 69 | Mass Res: 2.096431e-03 | U Res: 3.909464e-03 | V Res: 2.530391e-03 |
+Outer Iter 70 | Max Net Mass Imbalance: 4.775215e-06 at cell 4321
+Iter 70 | Mass Res: 1.980003e-03 | U Res: 3.855124e-03 | V Res: 2.483703e-03 |
+Outer Iter 71 | Max Net Mass Imbalance: 4.517218e-06 at cell 4319
+Iter 71 | Mass Res: 1.855410e-03 | U Res: 3.804502e-03 | V Res: 2.444101e-03 |
+Outer Iter 72 | Max Net Mass Imbalance: 4.251160e-06 at cell 4319
+Iter 72 | Mass Res: 1.726403e-03 | U Res: 3.755185e-03 | V Res: 2.400163e-03 |
+Outer Iter 73 | Max Net Mass Imbalance: 3.964074e-06 at cell 4319
+Iter 73 | Mass Res: 1.598250e-03 | U Res: 3.708459e-03 | V Res: 2.361752e-03 |
+Outer Iter 74 | Max Net Mass Imbalance: 3.695445e-06 at cell 4317
+Iter 74 | Mass Res: 1.473500e-03 | U Res: 3.663719e-03 | V Res: 2.319782e-03 |
+Outer Iter 75 | Max Net Mass Imbalance: 3.445312e-06 at cell 4317
+Iter 75 | Mass Res: 1.356434e-03 | U Res: 3.620068e-03 | V Res: 2.282697e-03 |
+Outer Iter 76 | Max Net Mass Imbalance: 3.217463e-06 at cell 4315
+Iter 76 | Mass Res: 1.248375e-03 | U Res: 3.578980e-03 | V Res: 2.242027e-03 |
+Outer Iter 77 | Max Net Mass Imbalance: 3.007369e-06 at cell 4315
+Iter 77 | Mass Res: 1.151942e-03 | U Res: 3.537783e-03 | V Res: 2.206334e-03 |
+Outer Iter 78 | Max Net Mass Imbalance: 2.868670e-06 at cell 2377
+Iter 78 | Mass Res: 1.068520e-03 | U Res: 3.499039e-03 | V Res: 2.167111e-03 |
+Outer Iter 79 | Max Net Mass Imbalance: 2.795106e-06 at cell 2476
+Iter 79 | Mass Res: 9.983863e-04 | U Res: 3.460353e-03 | V Res: 2.131203e-03 |
+Outer Iter 80 | Max Net Mass Imbalance: 2.746900e-06 at cell 2476
+Iter 80 | Mass Res: 9.424574e-04 | U Res: 3.422958e-03 | V Res: 2.094010e-03 |
+Outer Iter 81 | Max Net Mass Imbalance: 2.709194e-06 at cell 2476
+Iter 81 | Mass Res: 9.002383e-04 | U Res: 3.386209e-03 | V Res: 2.057703e-03 |
+Outer Iter 82 | Max Net Mass Imbalance: 2.674725e-06 at cell 2476
+Iter 82 | Mass Res: 8.712714e-04 | U Res: 3.350064e-03 | V Res: 2.021516e-03 |
+Outer Iter 83 | Max Net Mass Imbalance: 2.673059e-06 at cell 2377
+Iter 83 | Mass Res: 8.555588e-04 | U Res: 3.314359e-03 | V Res: 1.985631e-03 |
+Outer Iter 84 | Max Net Mass Imbalance: 2.687123e-06 at cell 2377
+Iter 84 | Mass Res: 8.508779e-04 | U Res: 3.279370e-03 | V Res: 1.950081e-03 |
+Outer Iter 85 | Max Net Mass Imbalance: 2.702045e-06 at cell 2377
+Iter 85 | Mass Res: 8.552573e-04 | U Res: 3.245011e-03 | V Res: 1.914909e-03 |
+Outer Iter 86 | Max Net Mass Imbalance: 2.718632e-06 at cell 2476
+Iter 86 | Mass Res: 8.667635e-04 | U Res: 3.211407e-03 | V Res: 1.880770e-03 |
+Outer Iter 87 | Max Net Mass Imbalance: 2.738881e-06 at cell 2476
+Iter 87 | Mass Res: 8.836707e-04 | U Res: 3.178505e-03 | V Res: 1.847198e-03 |
+Outer Iter 88 | Max Net Mass Imbalance: 2.759029e-06 at cell 2575
+Iter 88 | Mass Res: 9.043434e-04 | U Res: 3.146355e-03 | V Res: 1.814838e-03 |
+Outer Iter 89 | Max Net Mass Imbalance: 2.777803e-06 at cell 2575
+Iter 89 | Mass Res: 9.272532e-04 | U Res: 3.114944e-03 | V Res: 1.783216e-03 |
+Outer Iter 90 | Max Net Mass Imbalance: 2.793081e-06 at cell 2575
+Iter 90 | Mass Res: 9.508901e-04 | U Res: 3.084348e-03 | V Res: 1.752747e-03 |
+Outer Iter 91 | Max Net Mass Imbalance: 2.817742e-06 at cell 2674
+Iter 91 | Mass Res: 9.739474e-04 | U Res: 3.054545e-03 | V Res: 1.723142e-03 |
+Outer Iter 92 | Max Net Mass Imbalance: 2.845674e-06 at cell 2674
+Iter 92 | Mass Res: 9.953667e-04 | U Res: 3.025574e-03 | V Res: 1.694565e-03 |
+Outer Iter 93 | Max Net Mass Imbalance: 2.858381e-06 at cell 2674
+Iter 93 | Mass Res: 1.014243e-03 | U Res: 2.997418e-03 | V Res: 1.666916e-03 |
+Outer Iter 94 | Max Net Mass Imbalance: 2.861203e-06 at cell 2674
+Iter 94 | Mass Res: 1.029956e-03 | U Res: 2.970087e-03 | V Res: 1.640177e-03 |
+Outer Iter 95 | Max Net Mass Imbalance: 2.859497e-06 at cell 2674
+Iter 95 | Mass Res: 1.042000e-03 | U Res: 2.943533e-03 | V Res: 1.614339e-03 |
+Outer Iter 96 | Max Net Mass Imbalance: 2.855694e-06 at cell 2674
+Iter 96 | Mass Res: 1.050132e-03 | U Res: 2.917770e-03 | V Res: 1.589309e-03 |
+Outer Iter 97 | Max Net Mass Imbalance: 2.859899e-06 at cell 2773
+Iter 97 | Mass Res: 1.054206e-03 | U Res: 2.892734e-03 | V Res: 1.565157e-03 |
+Outer Iter 98 | Max Net Mass Imbalance: 2.854419e-06 at cell 2773
+Iter 98 | Mass Res: 1.054292e-03 | U Res: 2.868428e-03 | V Res: 1.541786e-03 |
+Outer Iter 99 | Max Net Mass Imbalance: 2.844027e-06 at cell 2773
+Iter 99 | Mass Res: 1.050536e-03 | U Res: 2.844785e-03 | V Res: 1.519242e-03 |
+Outer Iter 100 | Max Net Mass Imbalance: 2.823712e-06 at cell 2773
+Iter 100 | Mass Res: 1.043230e-03 | U Res: 2.821787e-03 | V Res: 1.497441e-03 |
+Outer Iter 101 | Max Net Mass Imbalance: 2.800025e-06 at cell 2773
+Iter 101 | Mass Res: 1.032734e-03 | U Res: 2.799414e-03 | V Res: 1.476389e-03 |
+Outer Iter 102 | Max Net Mass Imbalance: 2.774538e-06 at cell 2773
+Iter 102 | Mass Res: 1.019463e-03 | U Res: 2.777663e-03 | V Res: 1.456026e-03 |
+Outer Iter 103 | Max Net Mass Imbalance: 2.744189e-06 at cell 2773
+Iter 103 | Mass Res: 1.003883e-03 | U Res: 2.756512e-03 | V Res: 1.436337e-03 |
+Outer Iter 104 | Max Net Mass Imbalance: 2.714145e-06 at cell 2773
+Iter 104 | Mass Res: 9.864738e-04 | U Res: 2.735960e-03 | V Res: 1.417281e-03 |
+Outer Iter 105 | Max Net Mass Imbalance: 2.680868e-06 at cell 2773
+Iter 105 | Mass Res: 9.677139e-04 | U Res: 2.715960e-03 | V Res: 1.398807e-03 |
+Outer Iter 106 | Max Net Mass Imbalance: 2.645094e-06 at cell 2674
+Iter 106 | Mass Res: 9.480589e-04 | U Res: 2.696554e-03 | V Res: 1.380913e-03 |
+Outer Iter 107 | Max Net Mass Imbalance: 2.615393e-06 at cell 2674
+Iter 107 | Mass Res: 9.279597e-04 | U Res: 2.677740e-03 | V Res: 1.363580e-03 |
+Outer Iter 108 | Max Net Mass Imbalance: 2.585549e-06 at cell 2674
+Iter 108 | Mass Res: 9.077971e-04 | U Res: 2.659496e-03 | V Res: 1.346786e-03 |
+Outer Iter 109 | Max Net Mass Imbalance: 2.554792e-06 at cell 2674
+Iter 109 | Mass Res: 8.879341e-04 | U Res: 2.641816e-03 | V Res: 1.330529e-03 |
+Outer Iter 110 | Max Net Mass Imbalance: 2.524242e-06 at cell 2674
+Iter 110 | Mass Res: 8.686657e-04 | U Res: 2.624711e-03 | V Res: 1.314824e-03 |
+Outer Iter 111 | Max Net Mass Imbalance: 2.494359e-06 at cell 2674
+Iter 111 | Mass Res: 8.502509e-04 | U Res: 2.608165e-03 | V Res: 1.299655e-03 |
+Outer Iter 112 | Max Net Mass Imbalance: 2.466249e-06 at cell 2674
+Iter 112 | Mass Res: 8.328883e-04 | U Res: 2.592135e-03 | V Res: 1.285035e-03 |
+Outer Iter 113 | Max Net Mass Imbalance: 2.437775e-06 at cell 2674
+Iter 113 | Mass Res: 8.167390e-04 | U Res: 2.576663e-03 | V Res: 1.270958e-03 |
+Outer Iter 114 | Max Net Mass Imbalance: 2.410197e-06 at cell 2674
+Iter 114 | Mass Res: 8.019331e-04 | U Res: 2.561723e-03 | V Res: 1.257433e-03 |
+Outer Iter 115 | Max Net Mass Imbalance: 2.382604e-06 at cell 2674
+Iter 115 | Mass Res: 7.885445e-04 | U Res: 2.547278e-03 | V Res: 1.244423e-03 |
+Outer Iter 116 | Max Net Mass Imbalance: 2.356372e-06 at cell 2674
+Iter 116 | Mass Res: 7.765899e-04 | U Res: 2.533303e-03 | V Res: 1.231938e-03 |
+Outer Iter 117 | Max Net Mass Imbalance: 2.330157e-06 at cell 2674
+Iter 117 | Mass Res: 7.660398e-04 | U Res: 2.519779e-03 | V Res: 1.219931e-03 |
+Outer Iter 118 | Max Net Mass Imbalance: 2.303919e-06 at cell 2674
+Iter 118 | Mass Res: 7.568482e-04 | U Res: 2.506639e-03 | V Res: 1.208387e-03 |
+Outer Iter 119 | Max Net Mass Imbalance: 2.277082e-06 at cell 2674
+Iter 119 | Mass Res: 7.489339e-04 | U Res: 2.493806e-03 | V Res: 1.197238e-03 |
+Outer Iter 120 | Max Net Mass Imbalance: 2.249500e-06 at cell 2674
+Iter 120 | Mass Res: 7.421997e-04 | U Res: 2.481183e-03 | V Res: 1.186427e-03 |
+Outer Iter 121 | Max Net Mass Imbalance: 2.221070e-06 at cell 2674
+Iter 121 | Mass Res: 7.365475e-04 | U Res: 2.468590e-03 | V Res: 1.175827e-03 |
+Outer Iter 122 | Max Net Mass Imbalance: 2.189671e-06 at cell 2674
+Iter 122 | Mass Res: 7.319052e-04 | U Res: 2.455858e-03 | V Res: 1.165306e-03 |
+Outer Iter 123 | Max Net Mass Imbalance: 2.156225e-06 at cell 2674
+Iter 123 | Mass Res: 7.282363e-04 | U Res: 2.442707e-03 | V Res: 1.154608e-03 |
+Outer Iter 124 | Max Net Mass Imbalance: 2.119854e-06 at cell 2674
+Iter 124 | Mass Res: 7.255176e-04 | U Res: 2.428901e-03 | V Res: 1.143488e-03 |
+Outer Iter 125 | Max Net Mass Imbalance: 2.079050e-06 at cell 2674
+Iter 125 | Mass Res: 7.237187e-04 | U Res: 2.413801e-03 | V Res: 1.131381e-03 |
+Outer Iter 126 | Max Net Mass Imbalance: 2.035408e-06 at cell 2773
+Iter 126 | Mass Res: 7.228250e-04 | U Res: 2.396983e-03 | V Res: 1.117824e-03 |
+Outer Iter 127 | Max Net Mass Imbalance: 1.991084e-06 at cell 2773
+Iter 127 | Mass Res: 7.228193e-04 | U Res: 2.377796e-03 | V Res: 1.102122e-03 |
+Outer Iter 128 | Max Net Mass Imbalance: 1.940049e-06 at cell 2773
+Iter 128 | Mass Res: 7.237168e-04 | U Res: 2.355665e-03 | V Res: 1.083693e-03 |
+Outer Iter 129 | Max Net Mass Imbalance: 1.880277e-06 at cell 2773
+Iter 129 | Mass Res: 7.255517e-04 | U Res: 2.330506e-03 | V Res: 1.062234e-03 |
+Outer Iter 130 | Max Net Mass Imbalance: 1.822244e-06 at cell 2872
+Iter 130 | Mass Res: 7.283419e-04 | U Res: 2.302790e-03 | V Res: 1.037710e-03 |
+Outer Iter 131 | Max Net Mass Imbalance: 1.769994e-06 at cell 5082
+Iter 131 | Mass Res: 7.320673e-04 | U Res: 2.273982e-03 | V Res: 1.011407e-03 |
+Outer Iter 132 | Max Net Mass Imbalance: 1.791322e-06 at cell 5082
+Iter 132 | Mass Res: 7.365910e-04 | U Res: 2.245606e-03 | V Res: 9.852540e-04 |
+Outer Iter 133 | Max Net Mass Imbalance: 1.814574e-06 at cell 5082
+Iter 133 | Mass Res: 7.415760e-04 | U Res: 2.218521e-03 | V Res: 9.605686e-04 |
+Outer Iter 134 | Max Net Mass Imbalance: 1.833618e-06 at cell 5080
+Iter 134 | Mass Res: 7.464521e-04 | U Res: 2.192758e-03 | V Res: 9.377885e-04 |
+Outer Iter 135 | Max Net Mass Imbalance: 1.834456e-06 at cell 5078
+Iter 135 | Mass Res: 7.505010e-04 | U Res: 2.168280e-03 | V Res: 9.168668e-04 |
+Outer Iter 136 | Max Net Mass Imbalance: 1.830286e-06 at cell 5078
+Iter 136 | Mass Res: 7.530051e-04 | U Res: 2.144963e-03 | V Res: 8.976958e-04 |
+Outer Iter 137 | Max Net Mass Imbalance: 1.831440e-06 at cell 5180
+Iter 137 | Mass Res: 7.533545e-04 | U Res: 2.122675e-03 | V Res: 8.802135e-04 |
+Outer Iter 138 | Max Net Mass Imbalance: 1.829209e-06 at cell 5176
+Iter 138 | Mass Res: 7.511163e-04 | U Res: 2.101284e-03 | V Res: 8.642581e-04 |
+Outer Iter 139 | Max Net Mass Imbalance: 1.802471e-06 at cell 5176
+Iter 139 | Mass Res: 7.460306e-04 | U Res: 2.080650e-03 | V Res: 8.496573e-04 |
+Outer Iter 140 | Max Net Mass Imbalance: 1.772728e-06 at cell 5276
+Iter 140 | Mass Res: 7.380241e-04 | U Res: 2.060650e-03 | V Res: 8.362706e-04 |
+Outer Iter 141 | Max Net Mass Imbalance: 1.747858e-06 at cell 5274
+Iter 141 | Mass Res: 7.272042e-04 | U Res: 2.041206e-03 | V Res: 8.239758e-04 |
+Outer Iter 142 | Max Net Mass Imbalance: 1.692728e-06 at cell 5272
+Iter 142 | Mass Res: 7.138080e-04 | U Res: 2.022215e-03 | V Res: 8.126236e-04 |
+Outer Iter 143 | Max Net Mass Imbalance: 1.649622e-06 at cell 5374
+Iter 143 | Mass Res: 6.981720e-04 | U Res: 2.003611e-03 | V Res: 8.021382e-04 |
+Outer Iter 144 | Max Net Mass Imbalance: 1.600324e-06 at cell 2872
+Iter 144 | Mass Res: 6.807331e-04 | U Res: 1.985382e-03 | V Res: 7.924449e-04 |
+Outer Iter 145 | Max Net Mass Imbalance: 1.586081e-06 at cell 2872
+Iter 145 | Mass Res: 6.619581e-04 | U Res: 1.967441e-03 | V Res: 7.833877e-04 |
+Outer Iter 146 | Max Net Mass Imbalance: 1.569060e-06 at cell 2872
+Iter 146 | Mass Res: 6.423292e-04 | U Res: 1.949843e-03 | V Res: 7.750059e-04 |
+Outer Iter 147 | Max Net Mass Imbalance: 1.549274e-06 at cell 2872
+Iter 147 | Mass Res: 6.223401e-04 | U Res: 1.932582e-03 | V Res: 7.671753e-04 |
+Outer Iter 148 | Max Net Mass Imbalance: 1.527302e-06 at cell 2872
+Iter 148 | Mass Res: 6.024413e-04 | U Res: 1.915709e-03 | V Res: 7.598688e-04 |
+Outer Iter 149 | Max Net Mass Imbalance: 1.504032e-06 at cell 2872
+Iter 149 | Mass Res: 5.830292e-04 | U Res: 1.899213e-03 | V Res: 7.529404e-04 |
+Outer Iter 150 | Max Net Mass Imbalance: 1.480449e-06 at cell 2872
+Iter 150 | Mass Res: 5.644465e-04 | U Res: 1.883135e-03 | V Res: 7.463052e-04 |
+Outer Iter 151 | Max Net Mass Imbalance: 1.457155e-06 at cell 2872
+Iter 151 | Mass Res: 5.469890e-04 | U Res: 1.867465e-03 | V Res: 7.398093e-04 |
+Outer Iter 152 | Max Net Mass Imbalance: 1.434239e-06 at cell 2773
+Iter 152 | Mass Res: 5.308757e-04 | U Res: 1.852185e-03 | V Res: 7.333293e-04 |
+Outer Iter 153 | Max Net Mass Imbalance: 1.412778e-06 at cell 2773
+Iter 153 | Mass Res: 5.162653e-04 | U Res: 1.837242e-03 | V Res: 7.267391e-04 |
+Outer Iter 154 | Max Net Mass Imbalance: 1.392362e-06 at cell 2773
+Iter 154 | Mass Res: 5.032627e-04 | U Res: 1.822552e-03 | V Res: 7.200009e-04 |
+Outer Iter 155 | Max Net Mass Imbalance: 1.373257e-06 at cell 2674
+Iter 155 | Mass Res: 4.919149e-04 | U Res: 1.807957e-03 | V Res: 7.131337e-04 |
+Outer Iter 156 | Max Net Mass Imbalance: 1.356207e-06 at cell 2674
+Iter 156 | Mass Res: 4.821986e-04 | U Res: 1.793342e-03 | V Res: 7.063076e-04 |
+Outer Iter 157 | Max Net Mass Imbalance: 1.340412e-06 at cell 2674
+Iter 157 | Mass Res: 4.740573e-04 | U Res: 1.778596e-03 | V Res: 6.997028e-04 |
+Outer Iter 158 | Max Net Mass Imbalance: 1.326056e-06 at cell 2674
+Iter 158 | Mass Res: 4.674096e-04 | U Res: 1.763667e-03 | V Res: 6.935268e-04 |
+Outer Iter 159 | Max Net Mass Imbalance: 1.313336e-06 at cell 2674
+Iter 159 | Mass Res: 4.621389e-04 | U Res: 1.748574e-03 | V Res: 6.878088e-04 |
+Outer Iter 160 | Max Net Mass Imbalance: 1.302010e-06 at cell 2674
+Iter 160 | Mass Res: 4.581024e-04 | U Res: 1.733359e-03 | V Res: 6.825522e-04 |
+Outer Iter 161 | Max Net Mass Imbalance: 1.291668e-06 at cell 2674
+Iter 161 | Mass Res: 4.551244e-04 | U Res: 1.718039e-03 | V Res: 6.776572e-04 |
+Outer Iter 162 | Max Net Mass Imbalance: 1.282399e-06 at cell 2674
+Iter 162 | Mass Res: 4.530152e-04 | U Res: 1.702638e-03 | V Res: 6.730559e-04 |
+Outer Iter 163 | Max Net Mass Imbalance: 1.274179e-06 at cell 2674
+Iter 163 | Mass Res: 4.515869e-04 | U Res: 1.687164e-03 | V Res: 6.686496e-04 |
+Outer Iter 164 | Max Net Mass Imbalance: 1.266664e-06 at cell 2674
+Iter 164 | Mass Res: 4.506387e-04 | U Res: 1.671615e-03 | V Res: 6.643581e-04 |
+Outer Iter 165 | Max Net Mass Imbalance: 1.259587e-06 at cell 2674
+Iter 165 | Mass Res: 4.499879e-04 | U Res: 1.656019e-03 | V Res: 6.601495e-04 |
+Outer Iter 166 | Max Net Mass Imbalance: 1.252983e-06 at cell 2674
+Iter 166 | Mass Res: 4.494620e-04 | U Res: 1.640396e-03 | V Res: 6.559724e-04 |
+Outer Iter 167 | Max Net Mass Imbalance: 1.246699e-06 at cell 2674
+Iter 167 | Mass Res: 4.489041e-04 | U Res: 1.624776e-03 | V Res: 6.518212e-04 |
+Outer Iter 168 | Max Net Mass Imbalance: 1.240354e-06 at cell 2674
+Iter 168 | Mass Res: 4.481895e-04 | U Res: 1.609181e-03 | V Res: 6.476837e-04 |
+Outer Iter 169 | Max Net Mass Imbalance: 1.233824e-06 at cell 2674
+Iter 169 | Mass Res: 4.472271e-04 | U Res: 1.593631e-03 | V Res: 6.435518e-04 |
+Outer Iter 170 | Max Net Mass Imbalance: 1.227093e-06 at cell 2674
+Iter 170 | Mass Res: 4.459424e-04 | U Res: 1.578128e-03 | V Res: 6.394402e-04 |
+Outer Iter 171 | Max Net Mass Imbalance: 1.219998e-06 at cell 2674
+Iter 171 | Mass Res: 4.442898e-04 | U Res: 1.562669e-03 | V Res: 6.353417e-04 |
+Outer Iter 172 | Max Net Mass Imbalance: 1.212406e-06 at cell 2674
+Iter 172 | Mass Res: 4.422474e-04 | U Res: 1.547247e-03 | V Res: 6.312620e-04 |
+Outer Iter 173 | Max Net Mass Imbalance: 1.204370e-06 at cell 2674
+Iter 173 | Mass Res: 4.398089e-04 | U Res: 1.531847e-03 | V Res: 6.272126e-04 |
+Outer Iter 174 | Max Net Mass Imbalance: 1.195890e-06 at cell 2674
+Iter 174 | Mass Res: 4.369964e-04 | U Res: 1.516447e-03 | V Res: 6.231725e-04 |
+Outer Iter 175 | Max Net Mass Imbalance: 1.186886e-06 at cell 2674
+Iter 175 | Mass Res: 4.338438e-04 | U Res: 1.501027e-03 | V Res: 6.191442e-04 |
+Outer Iter 176 | Max Net Mass Imbalance: 1.177411e-06 at cell 2674
+Iter 176 | Mass Res: 4.303933e-04 | U Res: 1.485564e-03 | V Res: 6.151236e-04 |
+Outer Iter 177 | Max Net Mass Imbalance: 1.167570e-06 at cell 2674
+Iter 177 | Mass Res: 4.267066e-04 | U Res: 1.470036e-03 | V Res: 6.110845e-04 |
+Outer Iter 178 | Max Net Mass Imbalance: 1.157359e-06 at cell 2674
+Iter 178 | Mass Res: 4.228426e-04 | U Res: 1.454426e-03 | V Res: 6.070272e-04 |
+Outer Iter 179 | Max Net Mass Imbalance: 1.146838e-06 at cell 2674
+Iter 179 | Mass Res: 4.188638e-04 | U Res: 1.438711e-03 | V Res: 6.029379e-04 |
+Outer Iter 180 | Max Net Mass Imbalance: 1.136142e-06 at cell 2674
+Iter 180 | Mass Res: 4.148346e-04 | U Res: 1.422874e-03 | V Res: 5.987968e-04 |
+Outer Iter 181 | Max Net Mass Imbalance: 1.125322e-06 at cell 2674
+Iter 181 | Mass Res: 4.108156e-04 | U Res: 1.406903e-03 | V Res: 5.946077e-04 |
+Outer Iter 182 | Max Net Mass Imbalance: 1.114426e-06 at cell 2674
+Iter 182 | Mass Res: 4.068606e-04 | U Res: 1.390777e-03 | V Res: 5.903571e-04 |
+Outer Iter 183 | Max Net Mass Imbalance: 1.103576e-06 at cell 2674
+Iter 183 | Mass Res: 4.030167e-04 | U Res: 1.374477e-03 | V Res: 5.860355e-04 |
+Outer Iter 184 | Max Net Mass Imbalance: 1.092834e-06 at cell 2674
+Iter 184 | Mass Res: 3.993241e-04 | U Res: 1.357991e-03 | V Res: 5.816544e-04 |
+Outer Iter 185 | Max Net Mass Imbalance: 1.082222e-06 at cell 2674
+Iter 185 | Mass Res: 3.958120e-04 | U Res: 1.341296e-03 | V Res: 5.772073e-04 |
+Outer Iter 186 | Max Net Mass Imbalance: 1.071821e-06 at cell 2674
+Iter 186 | Mass Res: 3.925004e-04 | U Res: 1.324370e-03 | V Res: 5.726951e-04 |
+Outer Iter 187 | Max Net Mass Imbalance: 1.061675e-06 at cell 2674
+Iter 187 | Mass Res: 3.894004e-04 | U Res: 1.307196e-03 | V Res: 5.681344e-04 |
+Outer Iter 188 | Max Net Mass Imbalance: 1.051778e-06 at cell 2674
+Iter 188 | Mass Res: 3.865141e-04 | U Res: 1.289752e-03 | V Res: 5.635250e-04 |
+Outer Iter 189 | Max Net Mass Imbalance: 1.042190e-06 at cell 2674
+Iter 189 | Mass Res: 3.838363e-04 | U Res: 1.272012e-03 | V Res: 5.588728e-04 |
+Outer Iter 190 | Max Net Mass Imbalance: 1.032901e-06 at cell 2674
+Iter 190 | Mass Res: 3.813508e-04 | U Res: 1.253955e-03 | V Res: 5.541904e-04 |
+Outer Iter 191 | Max Net Mass Imbalance: 1.023878e-06 at cell 2674
+Iter 191 | Mass Res: 3.790402e-04 | U Res: 1.235564e-03 | V Res: 5.494782e-04 |
+Outer Iter 192 | Max Net Mass Imbalance: 1.015117e-06 at cell 2674
+Iter 192 | Mass Res: 3.768802e-04 | U Res: 1.216818e-03 | V Res: 5.447384e-04 |
+Outer Iter 193 | Max Net Mass Imbalance: 1.006606e-06 at cell 2674
+Iter 193 | Mass Res: 3.748446e-04 | U Res: 1.197709e-03 | V Res: 5.399792e-04 |
+Outer Iter 194 | Max Net Mass Imbalance: 9.983068e-07 at cell 2674
+Iter 194 | Mass Res: 3.729080e-04 | U Res: 1.178225e-03 | V Res: 5.351898e-04 |
+Outer Iter 195 | Max Net Mass Imbalance: 9.901950e-07 at cell 2674
+Iter 195 | Mass Res: 3.710385e-04 | U Res: 1.158366e-03 | V Res: 5.303576e-04 |
+Outer Iter 196 | Max Net Mass Imbalance: 9.822505e-07 at cell 2674
+Iter 196 | Mass Res: 3.692092e-04 | U Res: 1.138147e-03 | V Res: 5.254683e-04 |
+Outer Iter 197 | Max Net Mass Imbalance: 9.744305e-07 at cell 2674
+Iter 197 | Mass Res: 3.673997e-04 | U Res: 1.117598e-03 | V Res: 5.204866e-04 |
+Outer Iter 198 | Max Net Mass Imbalance: 9.667058e-07 at cell 2674
+Iter 198 | Mass Res: 3.655801e-04 | U Res: 1.096756e-03 | V Res: 5.153492e-04 |
+Outer Iter 199 | Max Net Mass Imbalance: 9.590571e-07 at cell 2674
+Iter 199 | Mass Res: 3.637312e-04 | U Res: 1.075697e-03 | V Res: 5.099801e-04 |
+Outer Iter 200 | Max Net Mass Imbalance: 9.514514e-07 at cell 2674
+Iter 200 | Mass Res: 3.618414e-04 | U Res: 1.054532e-03 | V Res: 5.042590e-04 |
+Outer Iter 201 | Max Net Mass Imbalance: 9.438673e-07 at cell 2674
+Iter 201 | Mass Res: 3.598951e-04 | U Res: 1.033393e-03 | V Res: 4.980095e-04 |
+Outer Iter 202 | Max Net Mass Imbalance: 9.362927e-07 at cell 2674
+Iter 202 | Mass Res: 3.578866e-04 | U Res: 1.012467e-03 | V Res: 4.910035e-04 |
+Outer Iter 203 | Max Net Mass Imbalance: 9.287088e-07 at cell 2674
+Iter 203 | Mass Res: 3.558177e-04 | U Res: 9.919761e-04 | V Res: 4.829369e-04 |
+Outer Iter 204 | Max Net Mass Imbalance: 9.211084e-07 at cell 2674
+Iter 204 | Mass Res: 3.536818e-04 | U Res: 9.721597e-04 | V Res: 4.734277e-04 |
+Outer Iter 205 | Max Net Mass Imbalance: 9.134922e-07 at cell 2674
+Iter 205 | Mass Res: 3.514832e-04 | U Res: 9.532799e-04 | V Res: 4.620695e-04 |
+Outer Iter 206 | Max Net Mass Imbalance: 9.058574e-07 at cell 2674
+Iter 206 | Mass Res: 3.492385e-04 | U Res: 9.355720e-04 | V Res: 4.484951e-04 |
+Outer Iter 207 | Max Net Mass Imbalance: 8.982087e-07 at cell 2674
+Iter 207 | Mass Res: 3.469461e-04 | U Res: 9.191737e-04 | V Res: 4.324846e-04 |
+Outer Iter 208 | Max Net Mass Imbalance: 8.905577e-07 at cell 2674
+Iter 208 | Mass Res: 3.446097e-04 | U Res: 9.041266e-04 | V Res: 4.141664e-04 |
+Outer Iter 209 | Max Net Mass Imbalance: 8.829111e-07 at cell 2674
+Iter 209 | Mass Res: 3.422379e-04 | U Res: 8.903550e-04 | V Res: 3.941258e-04 |
+Outer Iter 210 | Max Net Mass Imbalance: 8.752807e-07 at cell 2674
+Iter 210 | Mass Res: 3.398353e-04 | U Res: 8.776989e-04 | V Res: 3.733874e-04 |
+Outer Iter 211 | Max Net Mass Imbalance: 8.676780e-07 at cell 2674
+Iter 211 | Mass Res: 3.374006e-04 | U Res: 8.659966e-04 | V Res: 3.531243e-04 |
+Outer Iter 212 | Max Net Mass Imbalance: 8.601109e-07 at cell 2674
+Iter 212 | Mass Res: 3.349513e-04 | U Res: 8.551390e-04 | V Res: 3.343388e-04 |
+Outer Iter 213 | Max Net Mass Imbalance: 8.525868e-07 at cell 2674
+Iter 213 | Mass Res: 3.325155e-04 | U Res: 8.450215e-04 | V Res: 3.176729e-04 |
+Outer Iter 214 | Max Net Mass Imbalance: 8.451136e-07 at cell 2674
+Iter 214 | Mass Res: 3.301190e-04 | U Res: 8.355062e-04 | V Res: 3.034215e-04 |
+Outer Iter 215 | Max Net Mass Imbalance: 8.376995e-07 at cell 2674
+Iter 215 | Mass Res: 3.278032e-04 | U Res: 8.263944e-04 | V Res: 2.915982e-04 |
+Outer Iter 216 | Max Net Mass Imbalance: 8.303577e-07 at cell 2674
+Iter 216 | Mass Res: 3.256297e-04 | U Res: 8.174612e-04 | V Res: 2.819444e-04 |
+Outer Iter 217 | Max Net Mass Imbalance: 8.231081e-07 at cell 2674
+Iter 217 | Mass Res: 3.236265e-04 | U Res: 8.085135e-04 | V Res: 2.739572e-04 |
+Outer Iter 218 | Max Net Mass Imbalance: 8.159797e-07 at cell 2674
+Iter 218 | Mass Res: 3.218016e-04 | U Res: 7.994159e-04 | V Res: 2.673276e-04 |
+Outer Iter 219 | Max Net Mass Imbalance: 8.090081e-07 at cell 2674
+Iter 219 | Mass Res: 3.201496e-04 | U Res: 7.900780e-04 | V Res: 2.618724e-04 |
+Outer Iter 220 | Max Net Mass Imbalance: 8.022287e-07 at cell 2674
+Iter 220 | Mass Res: 3.186537e-04 | U Res: 7.804399e-04 | V Res: 2.574683e-04 |
+Outer Iter 221 | Max Net Mass Imbalance: 7.956703e-07 at cell 2674
+Iter 221 | Mass Res: 3.172878e-04 | U Res: 7.704649e-04 | V Res: 2.540143e-04 |
+Outer Iter 222 | Max Net Mass Imbalance: 7.893494e-07 at cell 2674
+Iter 222 | Mass Res: 3.160183e-04 | U Res: 7.601356e-04 | V Res: 2.514089e-04 |
+Outer Iter 223 | Max Net Mass Imbalance: 7.832676e-07 at cell 2674
+Iter 223 | Mass Res: 3.148054e-04 | U Res: 7.494517e-04 | V Res: 2.495353e-04 |
+Outer Iter 224 | Max Net Mass Imbalance: 7.774103e-07 at cell 2674
+Iter 224 | Mass Res: 3.136040e-04 | U Res: 7.384289e-04 | V Res: 2.482515e-04 |
+Outer Iter 225 | Max Net Mass Imbalance: 7.717488e-07 at cell 2674
+Iter 225 | Mass Res: 3.123666e-04 | U Res: 7.271002e-04 | V Res: 2.473822e-04 |
+Outer Iter 226 | Max Net Mass Imbalance: 7.662423e-07 at cell 2674
+Iter 226 | Mass Res: 3.110451e-04 | U Res: 7.155151e-04 | V Res: 2.467159e-04 |
+Outer Iter 227 | Max Net Mass Imbalance: 7.608425e-07 at cell 2674
+Iter 227 | Mass Res: 3.095930e-04 | U Res: 7.037405e-04 | V Res: 2.460053e-04 |
+Outer Iter 228 | Max Net Mass Imbalance: 7.555015e-07 at cell 2872
+Iter 228 | Mass Res: 3.079672e-04 | U Res: 6.918596e-04 | V Res: 2.449726e-04 |
+Outer Iter 229 | Max Net Mass Imbalance: 7.501871e-07 at cell 2872
+Iter 229 | Mass Res: 3.061297e-04 | U Res: 6.799717e-04 | V Res: 2.433186e-04 |
+Outer Iter 230 | Max Net Mass Imbalance: 7.448093e-07 at cell 2872
+Iter 230 | Mass Res: 3.040490e-04 | U Res: 6.681896e-04 | V Res: 2.407378e-04 |
+Outer Iter 231 | Max Net Mass Imbalance: 7.393190e-07 at cell 2872
+Iter 231 | Mass Res: 3.017010e-04 | U Res: 6.566347e-04 | V Res: 2.369396e-04 |
+Outer Iter 232 | Max Net Mass Imbalance: 7.336736e-07 at cell 2872
+Iter 232 | Mass Res: 2.990701e-04 | U Res: 6.454307e-04 | V Res: 2.316742e-04 |
+Outer Iter 233 | Max Net Mass Imbalance: 7.278380e-07 at cell 2872
+Iter 233 | Mass Res: 2.961492e-04 | U Res: 6.346946e-04 | V Res: 2.247633e-04 |
+Outer Iter 234 | Max Net Mass Imbalance: 7.217869e-07 at cell 2872
+Iter 234 | Mass Res: 2.929403e-04 | U Res: 6.245272e-04 | V Res: 2.161306e-04 |
+Outer Iter 235 | Max Net Mass Imbalance: 7.155271e-07 at cell 2674
+Iter 235 | Mass Res: 2.894573e-04 | U Res: 6.150042e-04 | V Res: 2.058284e-04 |
+Outer Iter 236 | Max Net Mass Imbalance: 7.090628e-07 at cell 2674
+Iter 236 | Mass Res: 2.857245e-04 | U Res: 6.061665e-04 | V Res: 1.940503e-04 |
+Outer Iter 237 | Max Net Mass Imbalance: 7.023774e-07 at cell 2674
+Iter 237 | Mass Res: 2.817745e-04 | U Res: 5.980162e-04 | V Res: 1.811270e-04 |
+Outer Iter 238 | Max Net Mass Imbalance: 6.954842e-07 at cell 2674
+Iter 238 | Mass Res: 2.776464e-04 | U Res: 5.905198e-04 | V Res: 1.674999e-04 |
+Outer Iter 239 | Max Net Mass Imbalance: 6.884056e-07 at cell 2674
+Iter 239 | Mass Res: 2.733846e-04 | U Res: 5.836148e-04 | V Res: 1.536755e-04 |
+Outer Iter 240 | Max Net Mass Imbalance: 6.811723e-07 at cell 2674
+Iter 240 | Mass Res: 2.690374e-04 | U Res: 5.772200e-04 | V Res: 1.401678e-04 |
+Outer Iter 241 | Max Net Mass Imbalance: 6.738210e-07 at cell 2674
+Iter 241 | Mass Res: 2.646535e-04 | U Res: 5.712465e-04 | V Res: 1.274406e-04 |
+Outer Iter 242 | Max Net Mass Imbalance: 6.663941e-07 at cell 2674
+Iter 242 | Mass Res: 2.602804e-04 | U Res: 5.656079e-04 | V Res: 1.158603e-04 |
+Outer Iter 243 | Max Net Mass Imbalance: 6.589358e-07 at cell 2674
+Iter 243 | Mass Res: 2.559645e-04 | U Res: 5.602281e-04 | V Res: 1.056682e-04 |
+Outer Iter 244 | Max Net Mass Imbalance: 6.514924e-07 at cell 2674
+Iter 244 | Mass Res: 2.517480e-04 | U Res: 5.550435e-04 | V Res: 9.697342e-05 |
+Outer Iter 245 | Max Net Mass Imbalance: 6.441090e-07 at cell 2674
+Iter 245 | Mass Res: 2.476680e-04 | U Res: 5.500045e-04 | V Res: 8.976508e-05 |
+Outer Iter 246 | Max Net Mass Imbalance: 6.368282e-07 at cell 2674
+Iter 246 | Mass Res: 2.437548e-04 | U Res: 5.450734e-04 | V Res: 8.393932e-05 |
+Outer Iter 247 | Max Net Mass Imbalance: 6.296885e-07 at cell 2674
+Iter 247 | Mass Res: 2.400327e-04 | U Res: 5.402241e-04 | V Res: 7.933156e-05 |
+Outer Iter 248 | Max Net Mass Imbalance: 6.227230e-07 at cell 2674
+Iter 248 | Mass Res: 2.365210e-04 | U Res: 5.354386e-04 | V Res: 7.574926e-05 |
+Outer Iter 249 | Max Net Mass Imbalance: 6.159588e-07 at cell 2674
+Iter 249 | Mass Res: 2.332335e-04 | U Res: 5.307054e-04 | V Res: 7.299655e-05 |
+Outer Iter 250 | Max Net Mass Imbalance: 6.094156e-07 at cell 2674
+Iter 250 | Mass Res: 2.301788e-04 | U Res: 5.260179e-04 | V Res: 7.088996e-05 |
+Outer Iter 251 | Max Net Mass Imbalance: 6.031068e-07 at cell 2674
+Iter 251 | Mass Res: 2.273612e-04 | U Res: 5.213729e-04 | V Res: 6.926749e-05 |
+Outer Iter 252 | Max Net Mass Imbalance: 5.970394e-07 at cell 2674
+Iter 252 | Mass Res: 2.247793e-04 | U Res: 5.167681e-04 | V Res: 6.799485e-05 |
+Outer Iter 253 | Max Net Mass Imbalance: 5.912148e-07 at cell 2674
+Iter 253 | Mass Res: 2.224241e-04 | U Res: 5.122019e-04 | V Res: 6.696849e-05 |
+Outer Iter 254 | Max Net Mass Imbalance: 5.856299e-07 at cell 2674
+Iter 254 | Mass Res: 2.202792e-04 | U Res: 5.076725e-04 | V Res: 6.611306e-05 |
+Outer Iter 255 | Max Net Mass Imbalance: 5.802769e-07 at cell 2674
+Iter 255 | Mass Res: 2.183228e-04 | U Res: 5.031788e-04 | V Res: 6.537492e-05 |
+Outer Iter 256 | Max Net Mass Imbalance: 5.751438e-07 at cell 2674
+Iter 256 | Mass Res: 2.165307e-04 | U Res: 4.987210e-04 | V Res: 6.471583e-05 |
+Outer Iter 257 | Max Net Mass Imbalance: 5.702138e-07 at cell 2674
+Iter 257 | Mass Res: 2.148771e-04 | U Res: 4.942996e-04 | V Res: 6.410874e-05 |
+Outer Iter 258 | Max Net Mass Imbalance: 5.654661e-07 at cell 2674
+Iter 258 | Mass Res: 2.133351e-04 | U Res: 4.899147e-04 | V Res: 6.353458e-05 |
+Outer Iter 259 | Max Net Mass Imbalance: 5.608768e-07 at cell 2674
+Iter 259 | Mass Res: 2.118782e-04 | U Res: 4.855670e-04 | V Res: 6.298014e-05 |
+Outer Iter 260 | Max Net Mass Imbalance: 5.564196e-07 at cell 2674
+Iter 260 | Mass Res: 2.104817e-04 | U Res: 4.812576e-04 | V Res: 6.243643e-05 |
+Outer Iter 261 | Max Net Mass Imbalance: 5.520676e-07 at cell 2674
+Iter 261 | Mass Res: 2.091218e-04 | U Res: 4.769865e-04 | V Res: 6.189746e-05 |
+Outer Iter 262 | Max Net Mass Imbalance: 5.477943e-07 at cell 2674
+Iter 262 | Mass Res: 2.077780e-04 | U Res: 4.727549e-04 | V Res: 6.135951e-05 |
+Outer Iter 263 | Max Net Mass Imbalance: 5.435746e-07 at cell 2674
+Iter 263 | Mass Res: 2.064323e-04 | U Res: 4.685631e-04 | V Res: 6.082037e-05 |
+Outer Iter 264 | Max Net Mass Imbalance: 5.393860e-07 at cell 2674
+Iter 264 | Mass Res: 2.050693e-04 | U Res: 4.644114e-04 | V Res: 6.027897e-05 |
+Outer Iter 265 | Max Net Mass Imbalance: 5.352095e-07 at cell 2674
+Iter 265 | Mass Res: 2.036776e-04 | U Res: 4.603005e-04 | V Res: 5.973501e-05 |
+Outer Iter 266 | Max Net Mass Imbalance: 5.310293e-07 at cell 2674
+Iter 266 | Mass Res: 2.022484e-04 | U Res: 4.562303e-04 | V Res: 5.918874e-05 |
+Outer Iter 267 | Max Net Mass Imbalance: 5.268333e-07 at cell 2674
+Iter 267 | Mass Res: 2.007762e-04 | U Res: 4.522009e-04 | V Res: 5.864072e-05 |
+Outer Iter 268 | Max Net Mass Imbalance: 5.226135e-07 at cell 2674
+Iter 268 | Mass Res: 1.992584e-04 | U Res: 4.482124e-04 | V Res: 5.809173e-05 |
+Outer Iter 269 | Max Net Mass Imbalance: 5.183653e-07 at cell 2674
+Iter 269 | Mass Res: 1.976945e-04 | U Res: 4.442644e-04 | V Res: 5.754265e-05 |
+Outer Iter 270 | Max Net Mass Imbalance: 5.140871e-07 at cell 2674
+Iter 270 | Mass Res: 1.960868e-04 | U Res: 4.403570e-04 | V Res: 5.699443e-05 |
+Outer Iter 271 | Max Net Mass Imbalance: 5.097803e-07 at cell 2674
+Iter 271 | Mass Res: 1.944391e-04 | U Res: 4.364895e-04 | V Res: 5.644796e-05 |
+Outer Iter 272 | Max Net Mass Imbalance: 5.054488e-07 at cell 2674
+Iter 272 | Mass Res: 1.927566e-04 | U Res: 4.326615e-04 | V Res: 5.590417e-05 |
+Outer Iter 273 | Max Net Mass Imbalance: 5.010980e-07 at cell 2674
+Iter 273 | Mass Res: 1.910458e-04 | U Res: 4.288726e-04 | V Res: 5.536386e-05 |
+Outer Iter 274 | Max Net Mass Imbalance: 4.967350e-07 at cell 2674
+Iter 274 | Mass Res: 1.893135e-04 | U Res: 4.251221e-04 | V Res: 5.482777e-05 |
+Outer Iter 275 | Max Net Mass Imbalance: 4.923675e-07 at cell 2674
+Iter 275 | Mass Res: 1.875675e-04 | U Res: 4.214095e-04 | V Res: 5.429656e-05 |
+Outer Iter 276 | Max Net Mass Imbalance: 4.880041e-07 at cell 2674
+Iter 276 | Mass Res: 1.858147e-04 | U Res: 4.177340e-04 | V Res: 5.377080e-05 |
+Outer Iter 277 | Max Net Mass Imbalance: 4.836530e-07 at cell 2674
+Iter 277 | Mass Res: 1.840627e-04 | U Res: 4.140950e-04 | V Res: 5.325100e-05 |
+Outer Iter 278 | Max Net Mass Imbalance: 4.793223e-07 at cell 2674
+Iter 278 | Mass Res: 1.823177e-04 | U Res: 4.104917e-04 | V Res: 5.273754e-05 |
+Outer Iter 279 | Max Net Mass Imbalance: 4.750199e-07 at cell 2674
+Iter 279 | Mass Res: 1.805861e-04 | U Res: 4.069237e-04 | V Res: 5.223075e-05 |
+Outer Iter 280 | Max Net Mass Imbalance: 4.707524e-07 at cell 2674
+Iter 280 | Mass Res: 1.788729e-04 | U Res: 4.033901e-04 | V Res: 5.173088e-05 |
+Outer Iter 281 | Max Net Mass Imbalance: 4.665259e-07 at cell 2674
+Iter 281 | Mass Res: 1.771825e-04 | U Res: 3.998903e-04 | V Res: 5.123810e-05 |
+Outer Iter 282 | Max Net Mass Imbalance: 4.623451e-07 at cell 2674
+Iter 282 | Mass Res: 1.755183e-04 | U Res: 3.964238e-04 | V Res: 5.075252e-05 |
+Outer Iter 283 | Max Net Mass Imbalance: 4.582140e-07 at cell 2674
+Iter 283 | Mass Res: 1.738830e-04 | U Res: 3.929899e-04 | V Res: 5.027421e-05 |
+Outer Iter 284 | Max Net Mass Imbalance: 4.541356e-07 at cell 2674
+Iter 284 | Mass Res: 1.722782e-04 | U Res: 3.895881e-04 | V Res: 4.980315e-05 |
+Outer Iter 285 | Max Net Mass Imbalance: 4.501115e-07 at cell 2674
+Iter 285 | Mass Res: 1.707047e-04 | U Res: 3.862179e-04 | V Res: 4.933931e-05 |
+Outer Iter 286 | Max Net Mass Imbalance: 4.461428e-07 at cell 2674
+Iter 286 | Mass Res: 1.691625e-04 | U Res: 3.828787e-04 | V Res: 4.888260e-05 |
+Outer Iter 287 | Max Net Mass Imbalance: 4.422293e-07 at cell 2674
+Iter 287 | Mass Res: 1.676511e-04 | U Res: 3.795702e-04 | V Res: 4.843290e-05 |
+Outer Iter 288 | Max Net Mass Imbalance: 4.383703e-07 at cell 2674
+Iter 288 | Mass Res: 1.661700e-04 | U Res: 3.762921e-04 | V Res: 4.799010e-05 |
+Outer Iter 289 | Max Net Mass Imbalance: 4.345644e-07 at cell 2674
+Iter 289 | Mass Res: 1.647184e-04 | U Res: 3.730443e-04 | V Res: 4.755400e-05 |
+Outer Iter 290 | Max Net Mass Imbalance: 4.308098e-07 at cell 2674
+Iter 290 | Mass Res: 1.632948e-04 | U Res: 3.698262e-04 | V Res: 4.712442e-05 |
+Outer Iter 291 | Max Net Mass Imbalance: 4.271044e-07 at cell 2674
+Iter 291 | Mass Res: 1.618973e-04 | U Res: 3.666376e-04 | V Res: 4.670114e-05 |
+Outer Iter 292 | Max Net Mass Imbalance: 4.234460e-07 at cell 2674
+Iter 292 | Mass Res: 1.605238e-04 | U Res: 3.634780e-04 | V Res: 4.628395e-05 |
+Outer Iter 293 | Max Net Mass Imbalance: 4.198324e-07 at cell 2674
+Iter 293 | Mass Res: 1.591719e-04 | U Res: 3.603472e-04 | V Res: 4.587265e-05 |
+Outer Iter 294 | Max Net Mass Imbalance: 4.162612e-07 at cell 2674
+Iter 294 | Mass Res: 1.578394e-04 | U Res: 3.572447e-04 | V Res: 4.546701e-05 |
+Outer Iter 295 | Max Net Mass Imbalance: 4.127301e-07 at cell 2674
+Iter 295 | Mass Res: 1.565241e-04 | U Res: 3.541705e-04 | V Res: 4.506681e-05 |
+Outer Iter 296 | Max Net Mass Imbalance: 4.092365e-07 at cell 2674
+Iter 296 | Mass Res: 1.552238e-04 | U Res: 3.511240e-04 | V Res: 4.467185e-05 |
+Outer Iter 297 | Max Net Mass Imbalance: 4.057783e-07 at cell 2674
+Iter 297 | Mass Res: 1.539365e-04 | U Res: 3.481051e-04 | V Res: 4.428191e-05 |
+Outer Iter 298 | Max Net Mass Imbalance: 4.023531e-07 at cell 2674
+Iter 298 | Mass Res: 1.526605e-04 | U Res: 3.451136e-04 | V Res: 4.389678e-05 |
+Outer Iter 299 | Max Net Mass Imbalance: 3.989590e-07 at cell 2674
+Iter 299 | Mass Res: 1.513942e-04 | U Res: 3.421491e-04 | V Res: 4.351626e-05 |
+Outer Iter 300 | Max Net Mass Imbalance: 3.955940e-07 at cell 2674
+Iter 300 | Mass Res: 1.501365e-04 | U Res: 3.392115e-04 | V Res: 4.314016e-05 |
+Outer Iter 301 | Max Net Mass Imbalance: 3.922566e-07 at cell 2674
+Iter 301 | Mass Res: 1.488863e-04 | U Res: 3.363004e-04 | V Res: 4.276831e-05 |
+Outer Iter 302 | Max Net Mass Imbalance: 3.889452e-07 at cell 2674
+Iter 302 | Mass Res: 1.476428e-04 | U Res: 3.334156e-04 | V Res: 4.240053e-05 |
+Outer Iter 303 | Max Net Mass Imbalance: 3.856588e-07 at cell 2674
+Iter 303 | Mass Res: 1.464055e-04 | U Res: 3.305569e-04 | V Res: 4.203666e-05 |
+Outer Iter 304 | Max Net Mass Imbalance: 3.823967e-07 at cell 2674
+Iter 304 | Mass Res: 1.451742e-04 | U Res: 3.277240e-04 | V Res: 4.167656e-05 |
+Outer Iter 305 | Max Net Mass Imbalance: 3.791582e-07 at cell 2674
+Iter 305 | Mass Res: 1.439488e-04 | U Res: 3.249167e-04 | V Res: 4.132009e-05 |
+Outer Iter 306 | Max Net Mass Imbalance: 3.759430e-07 at cell 2674
+Iter 306 | Mass Res: 1.427293e-04 | U Res: 3.221347e-04 | V Res: 4.096713e-05 |
+Outer Iter 307 | Max Net Mass Imbalance: 3.727511e-07 at cell 2674
+Iter 307 | Mass Res: 1.415160e-04 | U Res: 3.193777e-04 | V Res: 4.061756e-05 |
+Outer Iter 308 | Max Net Mass Imbalance: 3.695823e-07 at cell 2674
+Iter 308 | Mass Res: 1.403093e-04 | U Res: 3.166456e-04 | V Res: 4.027129e-05 |
+Outer Iter 309 | Max Net Mass Imbalance: 3.664371e-07 at cell 2674
+Iter 309 | Mass Res: 1.391095e-04 | U Res: 3.139381e-04 | V Res: 3.992823e-05 |
+Outer Iter 310 | Max Net Mass Imbalance: 3.633157e-07 at cell 2674
+Iter 310 | Mass Res: 1.379172e-04 | U Res: 3.112549e-04 | V Res: 3.958831e-05 |
+Outer Iter 311 | Max Net Mass Imbalance: 3.602183e-07 at cell 2674
+Iter 311 | Mass Res: 1.367328e-04 | U Res: 3.085958e-04 | V Res: 3.925144e-05 |
+Outer Iter 312 | Max Net Mass Imbalance: 3.571455e-07 at cell 2674
+Iter 312 | Mass Res: 1.355570e-04 | U Res: 3.059605e-04 | V Res: 3.891757e-05 |
+Outer Iter 313 | Max Net Mass Imbalance: 3.540975e-07 at cell 2674
+Iter 313 | Mass Res: 1.343901e-04 | U Res: 3.033488e-04 | V Res: 3.858666e-05 |
+Outer Iter 314 | Max Net Mass Imbalance: 3.510749e-07 at cell 2674
+Iter 314 | Mass Res: 1.332326e-04 | U Res: 3.007604e-04 | V Res: 3.825864e-05 |
+Outer Iter 315 | Max Net Mass Imbalance: 3.480780e-07 at cell 2674
+Iter 315 | Mass Res: 1.320849e-04 | U Res: 2.981951e-04 | V Res: 3.793349e-05 |
+Outer Iter 316 | Max Net Mass Imbalance: 3.451072e-07 at cell 2674
+Iter 316 | Mass Res: 1.309474e-04 | U Res: 2.956526e-04 | V Res: 3.761116e-05 |
+Outer Iter 317 | Max Net Mass Imbalance: 3.421625e-07 at cell 2674
+Iter 317 | Mass Res: 1.298204e-04 | U Res: 2.931328e-04 | V Res: 3.729163e-05 |
+Outer Iter 318 | Max Net Mass Imbalance: 3.392443e-07 at cell 2674
+Iter 318 | Mass Res: 1.287040e-04 | U Res: 2.906354e-04 | V Res: 3.697487e-05 |
+Outer Iter 319 | Max Net Mass Imbalance: 3.363525e-07 at cell 2674
+Iter 319 | Mass Res: 1.275984e-04 | U Res: 2.881602e-04 | V Res: 3.666084e-05 |
+Outer Iter 320 | Max Net Mass Imbalance: 3.334873e-07 at cell 2674
+Iter 320 | Mass Res: 1.265037e-04 | U Res: 2.857069e-04 | V Res: 3.634954e-05 |
+Outer Iter 321 | Max Net Mass Imbalance: 3.306485e-07 at cell 2674
+Iter 321 | Mass Res: 1.254198e-04 | U Res: 2.832753e-04 | V Res: 3.604093e-05 |
+Outer Iter 322 | Max Net Mass Imbalance: 3.278361e-07 at cell 2674
+Iter 322 | Mass Res: 1.243467e-04 | U Res: 2.808653e-04 | V Res: 3.573499e-05 |
+Outer Iter 323 | Max Net Mass Imbalance: 3.250498e-07 at cell 2674
+Iter 323 | Mass Res: 1.232844e-04 | U Res: 2.784765e-04 | V Res: 3.543171e-05 |
+Outer Iter 324 | Max Net Mass Imbalance: 3.222894e-07 at cell 2674
+Iter 324 | Mass Res: 1.222326e-04 | U Res: 2.761089e-04 | V Res: 3.513107e-05 |
+Outer Iter 325 | Max Net Mass Imbalance: 3.195546e-07 at cell 2674
+Iter 325 | Mass Res: 1.211912e-04 | U Res: 2.737622e-04 | V Res: 3.483304e-05 |
+Outer Iter 326 | Max Net Mass Imbalance: 3.168450e-07 at cell 2674
+Iter 326 | Mass Res: 1.201599e-04 | U Res: 2.714361e-04 | V Res: 3.453760e-05 |
+Outer Iter 327 | Max Net Mass Imbalance: 3.141603e-07 at cell 2674
+Iter 327 | Mass Res: 1.191386e-04 | U Res: 2.691306e-04 | V Res: 3.424474e-05 |
+Outer Iter 328 | Max Net Mass Imbalance: 3.115004e-07 at cell 2674
+Iter 328 | Mass Res: 1.181270e-04 | U Res: 2.668453e-04 | V Res: 3.395444e-05 |
+Outer Iter 329 | Max Net Mass Imbalance: 3.088657e-07 at cell 2674
+Iter 329 | Mass Res: 1.171248e-04 | U Res: 2.645802e-04 | V Res: 3.366667e-05 |
+Outer Iter 330 | Max Net Mass Imbalance: 3.062544e-07 at cell 2674
+Iter 330 | Mass Res: 1.161319e-04 | U Res: 2.623350e-04 | V Res: 3.338142e-05 |
+Outer Iter 331 | Max Net Mass Imbalance: 3.036662e-07 at cell 2674
+Iter 331 | Mass Res: 1.151480e-04 | U Res: 2.601096e-04 | V Res: 3.309865e-05 |
+Outer Iter 332 | Max Net Mass Imbalance: 3.011008e-07 at cell 2674
+Iter 332 | Mass Res: 1.141729e-04 | U Res: 2.579037e-04 | V Res: 3.281836e-05 |
+Outer Iter 333 | Max Net Mass Imbalance: 2.985577e-07 at cell 2674
+Iter 333 | Mass Res: 1.132064e-04 | U Res: 2.557172e-04 | V Res: 3.254051e-05 |
+Outer Iter 334 | Max Net Mass Imbalance: 2.960368e-07 at cell 2674
+Iter 334 | Mass Res: 1.122482e-04 | U Res: 2.535499e-04 | V Res: 3.226509e-05 |
+Outer Iter 335 | Max Net Mass Imbalance: 2.935377e-07 at cell 2674
+Iter 335 | Mass Res: 1.112984e-04 | U Res: 2.514016e-04 | V Res: 3.199208e-05 |
+Outer Iter 336 | Max Net Mass Imbalance: 2.910601e-07 at cell 2674
+Iter 336 | Mass Res: 1.103566e-04 | U Res: 2.492721e-04 | V Res: 3.172144e-05 |
+Outer Iter 337 | Max Net Mass Imbalance: 2.886038e-07 at cell 2674
+Iter 337 | Mass Res: 1.094228e-04 | U Res: 2.471614e-04 | V Res: 3.145317e-05 |
+Outer Iter 338 | Max Net Mass Imbalance: 2.861685e-07 at cell 2674
+Iter 338 | Mass Res: 1.084968e-04 | U Res: 2.450691e-04 | V Res: 3.118723e-05 |
+Outer Iter 339 | Max Net Mass Imbalance: 2.837540e-07 at cell 2674
+Iter 339 | Mass Res: 1.075787e-04 | U Res: 2.429951e-04 | V Res: 3.092361e-05 |
+Outer Iter 340 | Max Net Mass Imbalance: 2.813601e-07 at cell 2674
+Iter 340 | Mass Res: 1.066683e-04 | U Res: 2.409393e-04 | V Res: 3.066228e-05 |
+Outer Iter 341 | Max Net Mass Imbalance: 2.789867e-07 at cell 2674
+Iter 341 | Mass Res: 1.057655e-04 | U Res: 2.389014e-04 | V Res: 3.040322e-05 |
+Outer Iter 342 | Max Net Mass Imbalance: 2.766335e-07 at cell 2674
+Iter 342 | Mass Res: 1.048704e-04 | U Res: 2.368814e-04 | V Res: 3.014642e-05 |
+Outer Iter 343 | Max Net Mass Imbalance: 2.743004e-07 at cell 2674
+Iter 343 | Mass Res: 1.039828e-04 | U Res: 2.348791e-04 | V Res: 2.989184e-05 |
+Outer Iter 344 | Max Net Mass Imbalance: 2.719873e-07 at cell 2674
+Iter 344 | Mass Res: 1.031028e-04 | U Res: 2.328942e-04 | V Res: 2.963948e-05 |
+Outer Iter 345 | Max Net Mass Imbalance: 2.696940e-07 at cell 2674
+Iter 345 | Mass Res: 1.022302e-04 | U Res: 2.309266e-04 | V Res: 2.938930e-05 |
+Outer Iter 346 | Max Net Mass Imbalance: 2.674204e-07 at cell 2674
+Iter 346 | Mass Res: 1.013652e-04 | U Res: 2.289762e-04 | V Res: 2.914129e-05 |
+Outer Iter 347 | Max Net Mass Imbalance: 2.651663e-07 at cell 2674
+Iter 347 | Mass Res: 1.005076e-04 | U Res: 2.270428e-04 | V Res: 2.889543e-05 |
+Outer Iter 348 | Max Net Mass Imbalance: 2.629317e-07 at cell 2674
+Iter 348 | Mass Res: 9.965740e-05 | U Res: 2.251262e-04 | V Res: 2.865170e-05 |
+Outer Iter 349 | Max Net Mass Imbalance: 2.607164e-07 at cell 2674
+Iter 349 | Mass Res: 9.881463e-05 | U Res: 2.232263e-04 | V Res: 2.841009e-05 |
+Outer Iter 350 | Max Net Mass Imbalance: 2.585203e-07 at cell 2674
+Iter 350 | Mass Res: 9.797921e-05 | U Res: 2.213429e-04 | V Res: 2.817056e-05 |
+Outer Iter 351 | Max Net Mass Imbalance: 2.563432e-07 at cell 2674
+Iter 351 | Mass Res: 9.715112e-05 | U Res: 2.194760e-04 | V Res: 2.793311e-05 |
+Outer Iter 352 | Max Net Mass Imbalance: 2.541850e-07 at cell 2674
+Iter 352 | Mass Res: 9.633031e-05 | U Res: 2.176252e-04 | V Res: 2.769771e-05 |
+Outer Iter 353 | Max Net Mass Imbalance: 2.520456e-07 at cell 2674
+Iter 353 | Mass Res: 9.551674e-05 | U Res: 2.157905e-04 | V Res: 2.746435e-05 |
+Outer Iter 354 | Max Net Mass Imbalance: 2.499247e-07 at cell 2674
+Iter 354 | Mass Res: 9.471035e-05 | U Res: 2.139718e-04 | V Res: 2.723301e-05 |
+Outer Iter 355 | Max Net Mass Imbalance: 2.478223e-07 at cell 2674
+Iter 355 | Mass Res: 9.391109e-05 | U Res: 2.121688e-04 | V Res: 2.700367e-05 |
+Outer Iter 356 | Max Net Mass Imbalance: 2.457381e-07 at cell 2674
+Iter 356 | Mass Res: 9.311889e-05 | U Res: 2.103814e-04 | V Res: 2.677631e-05 |
+Outer Iter 357 | Max Net Mass Imbalance: 2.436721e-07 at cell 2674
+Iter 357 | Mass Res: 9.233370e-05 | U Res: 2.086096e-04 | V Res: 2.655092e-05 |
+Outer Iter 358 | Max Net Mass Imbalance: 2.416241e-07 at cell 2674
+Iter 358 | Mass Res: 9.155545e-05 | U Res: 2.068531e-04 | V Res: 2.632748e-05 |
+Outer Iter 359 | Max Net Mass Imbalance: 2.395938e-07 at cell 2674
+Iter 359 | Mass Res: 9.078406e-05 | U Res: 2.051118e-04 | V Res: 2.610597e-05 |
+Outer Iter 360 | Max Net Mass Imbalance: 2.375812e-07 at cell 2674
+Iter 360 | Mass Res: 9.001946e-05 | U Res: 2.033856e-04 | V Res: 2.588638e-05 |
+Outer Iter 361 | Max Net Mass Imbalance: 2.355861e-07 at cell 2674
+Iter 361 | Mass Res: 8.926159e-05 | U Res: 2.016744e-04 | V Res: 2.566868e-05 |
+Outer Iter 362 | Max Net Mass Imbalance: 2.336082e-07 at cell 2674
+Iter 362 | Mass Res: 8.851036e-05 | U Res: 1.999779e-04 | V Res: 2.545287e-05 |
+Outer Iter 363 | Max Net Mass Imbalance: 2.316475e-07 at cell 2674
+Iter 363 | Mass Res: 8.776571e-05 | U Res: 1.982961e-04 | V Res: 2.523892e-05 |
+Outer Iter 364 | Max Net Mass Imbalance: 2.297037e-07 at cell 2674
+Iter 364 | Mass Res: 8.702755e-05 | U Res: 1.966288e-04 | V Res: 2.502682e-05 |
+Outer Iter 365 | Max Net Mass Imbalance: 2.277768e-07 at cell 2674
+Iter 365 | Mass Res: 8.629583e-05 | U Res: 1.949760e-04 | V Res: 2.481654e-05 |
+Outer Iter 366 | Max Net Mass Imbalance: 2.258664e-07 at cell 2674
+Iter 366 | Mass Res: 8.557046e-05 | U Res: 1.933374e-04 | V Res: 2.460809e-05 |
+Outer Iter 367 | Max Net Mass Imbalance: 2.239726e-07 at cell 2674
+Iter 367 | Mass Res: 8.485138e-05 | U Res: 1.917129e-04 | V Res: 2.440143e-05 |
+Outer Iter 368 | Max Net Mass Imbalance: 2.220950e-07 at cell 2674
+Iter 368 | Mass Res: 8.413852e-05 | U Res: 1.901025e-04 | V Res: 2.419655e-05 |
+Outer Iter 369 | Max Net Mass Imbalance: 2.202336e-07 at cell 2674
+Iter 369 | Mass Res: 8.343182e-05 | U Res: 1.885060e-04 | V Res: 2.399344e-05 |
+Outer Iter 370 | Max Net Mass Imbalance: 2.183881e-07 at cell 2674
+Iter 370 | Mass Res: 8.273121e-05 | U Res: 1.869232e-04 | V Res: 2.379208e-05 |
+Outer Iter 371 | Max Net Mass Imbalance: 2.165586e-07 at cell 2674
+Iter 371 | Mass Res: 8.203663e-05 | U Res: 1.853540e-04 | V Res: 2.359246e-05 |
+Outer Iter 372 | Max Net Mass Imbalance: 2.147447e-07 at cell 2674
+Iter 372 | Mass Res: 8.134802e-05 | U Res: 1.837984e-04 | V Res: 2.339455e-05 |
+Outer Iter 373 | Max Net Mass Imbalance: 2.129463e-07 at cell 2674
+Iter 373 | Mass Res: 8.066532e-05 | U Res: 1.822562e-04 | V Res: 2.319835e-05 |
+Outer Iter 374 | Max Net Mass Imbalance: 2.111634e-07 at cell 2674
+Iter 374 | Mass Res: 7.998847e-05 | U Res: 1.807272e-04 | V Res: 2.300383e-05 |
+Outer Iter 375 | Max Net Mass Imbalance: 2.093957e-07 at cell 2674
+Iter 375 | Mass Res: 7.931743e-05 | U Res: 1.792114e-04 | V Res: 2.281099e-05 |
+Outer Iter 376 | Max Net Mass Imbalance: 2.076431e-07 at cell 2674
+Iter 376 | Mass Res: 7.865214e-05 | U Res: 1.777087e-04 | V Res: 2.261980e-05 |
+Outer Iter 377 | Max Net Mass Imbalance: 2.059056e-07 at cell 2674
+Iter 377 | Mass Res: 7.799254e-05 | U Res: 1.762188e-04 | V Res: 2.243026e-05 |
+Outer Iter 378 | Max Net Mass Imbalance: 2.041828e-07 at cell 2674
+Iter 378 | Mass Res: 7.733859e-05 | U Res: 1.747418e-04 | V Res: 2.224235e-05 |
+Outer Iter 379 | Max Net Mass Imbalance: 2.024748e-07 at cell 2674
+Iter 379 | Mass Res: 7.669025e-05 | U Res: 1.732774e-04 | V Res: 2.205605e-05 |
+Outer Iter 380 | Max Net Mass Imbalance: 2.007814e-07 at cell 2674
+Iter 380 | Mass Res: 7.604745e-05 | U Res: 1.718257e-04 | V Res: 2.187135e-05 |
+Outer Iter 381 | Max Net Mass Imbalance: 1.991025e-07 at cell 2674
+Iter 381 | Mass Res: 7.541016e-05 | U Res: 1.703863e-04 | V Res: 2.168823e-05 |
+Outer Iter 382 | Max Net Mass Imbalance: 1.974379e-07 at cell 2674
+Iter 382 | Mass Res: 7.477832e-05 | U Res: 1.689594e-04 | V Res: 2.150668e-05 |
+Outer Iter 383 | Max Net Mass Imbalance: 1.957875e-07 at cell 2674
+Iter 383 | Mass Res: 7.415190e-05 | U Res: 1.675446e-04 | V Res: 2.132669e-05 |
+Outer Iter 384 | Max Net Mass Imbalance: 1.941513e-07 at cell 2674
+Iter 384 | Mass Res: 7.353084e-05 | U Res: 1.661420e-04 | V Res: 2.114824e-05 |
+Outer Iter 385 | Max Net Mass Imbalance: 1.925289e-07 at cell 2674
+Iter 385 | Mass Res: 7.291509e-05 | U Res: 1.647514e-04 | V Res: 2.097132e-05 |
+Outer Iter 386 | Max Net Mass Imbalance: 1.909204e-07 at cell 2674
+Iter 386 | Mass Res: 7.230462e-05 | U Res: 1.633727e-04 | V Res: 2.079591e-05 |
+Outer Iter 387 | Max Net Mass Imbalance: 1.893257e-07 at cell 2674
+Iter 387 | Mass Res: 7.169938e-05 | U Res: 1.620059e-04 | V Res: 2.062200e-05 |
+Outer Iter 388 | Max Net Mass Imbalance: 1.877445e-07 at cell 2674
+Iter 388 | Mass Res: 7.109932e-05 | U Res: 1.606507e-04 | V Res: 2.044959e-05 |
+Outer Iter 389 | Max Net Mass Imbalance: 1.861768e-07 at cell 2674
+Iter 389 | Mass Res: 7.050440e-05 | U Res: 1.593071e-04 | V Res: 2.027864e-05 |
+Outer Iter 390 | Max Net Mass Imbalance: 1.846225e-07 at cell 2674
+Iter 390 | Mass Res: 6.991458e-05 | U Res: 1.579750e-04 | V Res: 2.010916e-05 |
+Outer Iter 391 | Max Net Mass Imbalance: 1.830815e-07 at cell 2674
+Iter 391 | Mass Res: 6.932980e-05 | U Res: 1.566543e-04 | V Res: 1.994113e-05 |
+Outer Iter 392 | Max Net Mass Imbalance: 1.815535e-07 at cell 2674
+Iter 392 | Mass Res: 6.875003e-05 | U Res: 1.553449e-04 | V Res: 1.977453e-05 |
+Outer Iter 393 | Max Net Mass Imbalance: 1.800386e-07 at cell 2674
+Iter 393 | Mass Res: 6.817521e-05 | U Res: 1.540467e-04 | V Res: 1.960935e-05 |
+Outer Iter 394 | Max Net Mass Imbalance: 1.785366e-07 at cell 2674
+Iter 394 | Mass Res: 6.760532e-05 | U Res: 1.527595e-04 | V Res: 1.944558e-05 |
+Outer Iter 395 | Max Net Mass Imbalance: 1.770473e-07 at cell 2674
+Iter 395 | Mass Res: 6.704030e-05 | U Res: 1.514834e-04 | V Res: 1.928321e-05 |
+Outer Iter 396 | Max Net Mass Imbalance: 1.755708e-07 at cell 2674
+Iter 396 | Mass Res: 6.648010e-05 | U Res: 1.502181e-04 | V Res: 1.912223e-05 |
+Outer Iter 397 | Max Net Mass Imbalance: 1.741068e-07 at cell 2674
+Iter 397 | Mass Res: 6.592470e-05 | U Res: 1.489636e-04 | V Res: 1.896262e-05 |
+Outer Iter 398 | Max Net Mass Imbalance: 1.726553e-07 at cell 2674
+Iter 398 | Mass Res: 6.537404e-05 | U Res: 1.477198e-04 | V Res: 1.880437e-05 |
+Outer Iter 399 | Max Net Mass Imbalance: 1.712161e-07 at cell 2674
+Iter 399 | Mass Res: 6.482808e-05 | U Res: 1.464867e-04 | V Res: 1.864747e-05 |
+Outer Iter 400 | Max Net Mass Imbalance: 1.697891e-07 at cell 2674
+Iter 400 | Mass Res: 6.428678e-05 | U Res: 1.452640e-04 | V Res: 1.849190e-05 |
+Outer Iter 401 | Max Net Mass Imbalance: 1.683743e-07 at cell 2674
+Iter 401 | Mass Res: 6.375010e-05 | U Res: 1.440518e-04 | V Res: 1.833766e-05 |
+Outer Iter 402 | Max Net Mass Imbalance: 1.669715e-07 at cell 2674
+Iter 402 | Mass Res: 6.321799e-05 | U Res: 1.428498e-04 | V Res: 1.818473e-05 |
+Outer Iter 403 | Max Net Mass Imbalance: 1.655806e-07 at cell 2674
+Iter 403 | Mass Res: 6.269042e-05 | U Res: 1.416581e-04 | V Res: 1.803310e-05 |
+Outer Iter 404 | Max Net Mass Imbalance: 1.642015e-07 at cell 2674
+Iter 404 | Mass Res: 6.216735e-05 | U Res: 1.404766e-04 | V Res: 1.788276e-05 |
+Outer Iter 405 | Max Net Mass Imbalance: 1.628341e-07 at cell 2674
+Iter 405 | Mass Res: 6.164873e-05 | U Res: 1.393051e-04 | V Res: 1.773370e-05 |
+Outer Iter 406 | Max Net Mass Imbalance: 1.614784e-07 at cell 2674
+Iter 406 | Mass Res: 6.113452e-05 | U Res: 1.381436e-04 | V Res: 1.758591e-05 |
+Outer Iter 407 | Max Net Mass Imbalance: 1.601341e-07 at cell 2674
+Iter 407 | Mass Res: 6.062469e-05 | U Res: 1.369919e-04 | V Res: 1.743937e-05 |
+Outer Iter 408 | Max Net Mass Imbalance: 1.588012e-07 at cell 2674
+Iter 408 | Mass Res: 6.011920e-05 | U Res: 1.358500e-04 | V Res: 1.729408e-05 |
+Outer Iter 409 | Max Net Mass Imbalance: 1.574796e-07 at cell 2674
+Iter 409 | Mass Res: 5.961801e-05 | U Res: 1.347179e-04 | V Res: 1.715002e-05 |
+Outer Iter 410 | Max Net Mass Imbalance: 1.561692e-07 at cell 2674
+Iter 410 | Mass Res: 5.912108e-05 | U Res: 1.335953e-04 | V Res: 1.700719e-05 |
+Outer Iter 411 | Max Net Mass Imbalance: 1.548698e-07 at cell 2674
+Iter 411 | Mass Res: 5.862837e-05 | U Res: 1.324823e-04 | V Res: 1.686556e-05 |
+Outer Iter 412 | Max Net Mass Imbalance: 1.535815e-07 at cell 2674
+Iter 412 | Mass Res: 5.813985e-05 | U Res: 1.313787e-04 | V Res: 1.672514e-05 |
+Outer Iter 413 | Max Net Mass Imbalance: 1.523041e-07 at cell 2674
+Iter 413 | Mass Res: 5.765548e-05 | U Res: 1.302845e-04 | V Res: 1.658591e-05 |
+Outer Iter 414 | Max Net Mass Imbalance: 1.510374e-07 at cell 2674
+Iter 414 | Mass Res: 5.717523e-05 | U Res: 1.291996e-04 | V Res: 1.644785e-05 |
+Outer Iter 415 | Max Net Mass Imbalance: 1.497815e-07 at cell 2674
+Iter 415 | Mass Res: 5.669905e-05 | U Res: 1.281239e-04 | V Res: 1.631097e-05 |
+Outer Iter 416 | Max Net Mass Imbalance: 1.485363e-07 at cell 2674
+Iter 416 | Mass Res: 5.622692e-05 | U Res: 1.270573e-04 | V Res: 1.617524e-05 |
+Outer Iter 417 | Max Net Mass Imbalance: 1.473015e-07 at cell 2674
+Iter 417 | Mass Res: 5.575879e-05 | U Res: 1.259997e-04 | V Res: 1.604067e-05 |
+Outer Iter 418 | Max Net Mass Imbalance: 1.460772e-07 at cell 2674
+Iter 418 | Mass Res: 5.529463e-05 | U Res: 1.249511e-04 | V Res: 1.590723e-05 |
+Outer Iter 419 | Max Net Mass Imbalance: 1.448633e-07 at cell 2674
+Iter 419 | Mass Res: 5.483441e-05 | U Res: 1.239114e-04 | V Res: 1.577493e-05 |
+Outer Iter 420 | Max Net Mass Imbalance: 1.436596e-07 at cell 2674
+Iter 420 | Mass Res: 5.437810e-05 | U Res: 1.228805e-04 | V Res: 1.564374e-05 |
+Outer Iter 421 | Max Net Mass Imbalance: 1.424660e-07 at cell 2674
+Iter 421 | Mass Res: 5.392565e-05 | U Res: 1.218583e-04 | V Res: 1.551366e-05 |
+Outer Iter 422 | Max Net Mass Imbalance: 1.412825e-07 at cell 2674
+Iter 422 | Mass Res: 5.347703e-05 | U Res: 1.208447e-04 | V Res: 1.538469e-05 |
+Outer Iter 423 | Max Net Mass Imbalance: 1.401096e-07 at cell 2674
+Iter 423 | Mass Res: 5.303221e-05 | U Res: 1.198398e-04 | V Res: 1.525680e-05 |
+Outer Iter 424 | Max Net Mass Imbalance: 1.389466e-07 at cell 2674
+Iter 424 | Mass Res: 5.259116e-05 | U Res: 1.188433e-04 | V Res: 1.512999e-05 |
+Outer Iter 425 | Max Net Mass Imbalance: 1.377934e-07 at cell 2674
+Iter 425 | Mass Res: 5.215384e-05 | U Res: 1.178553e-04 | V Res: 1.500426e-05 |
+Outer Iter 426 | Max Net Mass Imbalance: 1.366499e-07 at cell 2674
+Iter 426 | Mass Res: 5.172022e-05 | U Res: 1.168756e-04 | V Res: 1.487959e-05 |
+Outer Iter 427 | Max Net Mass Imbalance: 1.355159e-07 at cell 2674
+Iter 427 | Mass Res: 5.129026e-05 | U Res: 1.159042e-04 | V Res: 1.475597e-05 |
+Outer Iter 428 | Max Net Mass Imbalance: 1.343915e-07 at cell 2674
+Iter 428 | Mass Res: 5.086395e-05 | U Res: 1.149410e-04 | V Res: 1.463339e-05 |
+Outer Iter 429 | Max Net Mass Imbalance: 1.332765e-07 at cell 2674
+Iter 429 | Mass Res: 5.044123e-05 | U Res: 1.139859e-04 | V Res: 1.451185e-05 |
+Outer Iter 430 | Max Net Mass Imbalance: 1.321708e-07 at cell 2674
+Iter 430 | Mass Res: 5.002209e-05 | U Res: 1.130390e-04 | V Res: 1.439133e-05 |
+Outer Iter 431 | Max Net Mass Imbalance: 1.310745e-07 at cell 2674
+Iter 431 | Mass Res: 4.960649e-05 | U Res: 1.121000e-04 | V Res: 1.427183e-05 |
+Outer Iter 432 | Max Net Mass Imbalance: 1.299873e-07 at cell 2674
+Iter 432 | Mass Res: 4.919439e-05 | U Res: 1.111689e-04 | V Res: 1.415334e-05 |
+Outer Iter 433 | Max Net Mass Imbalance: 1.289093e-07 at cell 2674
+Iter 433 | Mass Res: 4.878578e-05 | U Res: 1.102457e-04 | V Res: 1.403585e-05 |
+Outer Iter 434 | Max Net Mass Imbalance: 1.278404e-07 at cell 2674
+Iter 434 | Mass Res: 4.838061e-05 | U Res: 1.093302e-04 | V Res: 1.391934e-05 |
+Outer Iter 435 | Max Net Mass Imbalance: 1.267804e-07 at cell 2674
+Iter 435 | Mass Res: 4.797886e-05 | U Res: 1.084225e-04 | V Res: 1.380382e-05 |
+Outer Iter 436 | Max Net Mass Imbalance: 1.257293e-07 at cell 2674
+Iter 436 | Mass Res: 4.758049e-05 | U Res: 1.075225e-04 | V Res: 1.368928e-05 |
+Outer Iter 437 | Max Net Mass Imbalance: 1.246871e-07 at cell 2674
+Iter 437 | Mass Res: 4.718549e-05 | U Res: 1.066300e-04 | V Res: 1.357569e-05 |
+Outer Iter 438 | Max Net Mass Imbalance: 1.236536e-07 at cell 2674
+Iter 438 | Mass Res: 4.679381e-05 | U Res: 1.057450e-04 | V Res: 1.346307e-05 |
+Outer Iter 439 | Max Net Mass Imbalance: 1.226287e-07 at cell 2674
+Iter 439 | Mass Res: 4.640544e-05 | U Res: 1.048675e-04 | V Res: 1.335139e-05 |
+Outer Iter 440 | Max Net Mass Imbalance: 1.216125e-07 at cell 2674
+Iter 440 | Mass Res: 4.602033e-05 | U Res: 1.039974e-04 | V Res: 1.324065e-05 |
+Outer Iter 441 | Max Net Mass Imbalance: 1.206048e-07 at cell 2674
+Iter 441 | Mass Res: 4.563847e-05 | U Res: 1.031346e-04 | V Res: 1.313084e-05 |
+Outer Iter 442 | Max Net Mass Imbalance: 1.196055e-07 at cell 2674
+Iter 442 | Mass Res: 4.525982e-05 | U Res: 1.022791e-04 | V Res: 1.302196e-05 |
+Outer Iter 443 | Max Net Mass Imbalance: 1.186147e-07 at cell 2674
+Iter 443 | Mass Res: 4.488436e-05 | U Res: 1.014308e-04 | V Res: 1.291399e-05 |
+Outer Iter 444 | Max Net Mass Imbalance: 1.176321e-07 at cell 2674
+Iter 444 | Mass Res: 4.451206e-05 | U Res: 1.005896e-04 | V Res: 1.280693e-05 |
+Outer Iter 445 | Max Net Mass Imbalance: 1.166578e-07 at cell 2674
+Iter 445 | Mass Res: 4.414289e-05 | U Res: 9.975552e-05 | V Res: 1.270077e-05 |
+Successfully exported field to field-446.csv
