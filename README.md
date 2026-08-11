@@ -16,3 +16,6 @@ momentum predictors are solved. Then an inner loop is run to get a converged pre
 
 Two wall functions were used, one which was C0 continuous, and the other which is C2 continuous. Additionally, the python scripts can be ran to visualise the mesh and velocity field. The simulation was ran on an HPC, using
 20 cores, and finished within ~5 minutes. The top and bottom walls are stationary with no-slip. The inlet is a total pressure inlet condition and the outlet is a static pressure inlet condition.
+
+Things to note:
+1) The current solver is not optimised at all. It uses a fixed iteration count to get the pressure correction and this is likely a large bottleneck for instability. Refining the mesh results in NaN errors.
