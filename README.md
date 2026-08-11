@@ -9,7 +9,10 @@ There were array indexing issues, and the explicit handling of the boundary cond
 were fixed and now the solver converges to residual tolerances lower than 1e-4 on a 100 x 100 grid.
 
 This code uses a non-orthogonal, skewed, body-fitted, structured, collocated grid. The Rhie and Chow interpolation is used to prevent checkerboarding. Physics was applied by basing the equations on the YouTube videos from
-FluidMechanics101 (namely: https://www.youtube.com/watch?v=yqZ59Xn_aF8&t=1231s and https://www.youtube.com/watch?v=PmEUiUB8ETk&t=1569s). The SIMPLE algorithm is used, whereby per every outer iteration, the x and y 
+FluidMechanics101 (namely: https://www.youtube.com/watch?v=yqZ59Xn_aF8&t=1231s and https://www.youtube.com/watch?v=PmEUiUB8ETk&t=1569s). The convective term uses upwinding and the diffusive term uses central differencing, with a deferred correction approach, to ensure correct handling of gradients, while maintaining a strong diagonal matrix to be solved. 
+
+
+The SIMPLE algorithm is used, whereby per every outer iteration, the x and y 
 momentum predictors are solved. Then an inner loop is run to get a converged pressure correction, after which the pressure correction is applied with under-relaxation to get the corrected velocity field and flux. The new arrays are then made into new arrays and the outer loop continues iterating. 
 
 Two wall functions were used, one which was C0 continuous, and the other which is C2 continuous. Additionally, the python scripts can be ran to visualise the mesh and velocity field. The simulation was ran on an HPC, using
