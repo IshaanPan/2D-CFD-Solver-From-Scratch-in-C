@@ -18,4 +18,5 @@ Two wall functions were used, one which was C0 continuous, and the other which i
 20 cores, and finished within ~5 minutes. The top and bottom walls are stationary with no-slip. The inlet is a total pressure inlet condition and the outlet is a static pressure inlet condition.
 
 Things to note:
-1) The current solver is not optimised at all. It uses a fixed iteration count to get the pressure correction and this is likely a large bottleneck for instability. Refining the mesh results in NaN errors.
+1) The current solver is not optimised at all. It uses a fixed iteration count to get the pressure correction and this is likely a large bottleneck for instability. Refining the mesh results in NaN errors if the inner loop max iteration is not set high to resolve the pressure correction field well enough. This results in significant increases in computational time, rising quickly to many many minutes as opposed to the quick ~5 minutes for less refined meshes with a max iter for the inner loop of 3000.
+2) Momentum residuals are currently just a measure of the change of the velocity field rather than an actual residual measuring momentum imbalance. 
