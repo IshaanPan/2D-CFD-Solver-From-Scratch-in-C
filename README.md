@@ -20,5 +20,6 @@ Two wall functions were used, one which was C0 continuous, and the other which i
 Things to note:
 1) The current solver is not optimised at all. It uses a fixed iteration count to get the pressure correction and this is likely a large bottleneck for instability. Refining the mesh results in NaN errors if the inner loop max iteration is not set high to resolve the pressure correction field well enough. This results in significant increases in computational time, rising quickly to hours as opposed to the quick ~5 minutes for less refined meshes with a max iter for the inner loop of 3000. Even still, if the mesh is too refined, it is likely that the solver diverges to NaNs.
 2) Momentum residuals are currently just a measure of the change of the velocity field rather than an actual residual measuring momentum imbalance.
-3) <img width="1115" height="581" alt="image" src="https://github.com/user-attachments/assets/4f541274-8934-4e62-a368-cd4be7b4ae20" />
+3) Under the current boundary condition (of a Pt-Ps= 50 Pa difference between the inlet and outlet) results in the following velocity field
+   <img width="1115" height="581" alt="image" src="https://github.com/user-attachments/assets/4f541274-8934-4e62-a368-cd4be7b4ae20" />
 
