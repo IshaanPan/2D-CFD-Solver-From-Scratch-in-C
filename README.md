@@ -1,6 +1,6 @@
 # 2D-CFD-Solver-From-Scratch-in-C
 Personal Project of Developing a 2D Finite Volume Method Solver to Learn C and CFD Implementation. 
-This is still an ongoing project. The base CFD Solver is made, but further work might still be done such as changing to Gauss-Seidl. After this, GPU acceleration will be learned and implemented using CUDA.  
+This is still an ongoing project. The base CFD Solver is made, but further work might still be done such as changing to Gauss-Seidl instead of Point Jacobi and improving convergence behaviour for highly refined meshes. After this, GPU acceleration will be learned and implemented using CUDA.  
 
 As of August 5, 2026: the mesh logic has been implemented, and the physics logic is being developed. The mesh can be visualised using Matplotlib in Python. 
 
