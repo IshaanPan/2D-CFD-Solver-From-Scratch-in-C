@@ -22,6 +22,6 @@ Things to note:
 2) Momentum residuals are currently just a measure of the change of the velocity field rather than an actual residual measuring momentum imbalance.
 3) Under the current boundary condition (of a Pt-Ps= 50 Pa difference between the inlet and outlet) and a 100 x 100 mesh, results in the following velocity field
    <img width="1115" height="581" alt="image" src="https://github.com/user-attachments/assets/4f541274-8934-4e62-a368-cd4be7b4ae20" />
-   <img width="1350" height="581" alt="asdasdasd" src="https://github.com/user-attachments/assets/3ebd4270-6635-40ed-8884-78f5008060ad" />
+   <img width="1115" height="700" alt="asdasdasd" src="https://github.com/user-attachments/assets/3ebd4270-6635-40ed-8884-78f5008060ad" />
 
 
