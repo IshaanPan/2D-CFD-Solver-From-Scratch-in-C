@@ -1,5 +1,5 @@
 # 2D-CFD-Solver-From-Scratch-in-C
-Personal Project of Developing a 2D Finite Volume Method Solver to Learn C and CFD Implementation. 
+Personal Project of Developing a 2D Finite Volume Method Solver to Learn C and CFD Implementation. Incompressible, steady state flow assumed.
 This is still an ongoing project. The base CFD Solver is made, but further work might still be done such as changing to Gauss-Seidl instead of Point Jacobi and improving convergence behaviour for highly refined meshes. Implementation choices still need to investigated in detail, for example the choice of Dirichlet boundary conditions for both the inlet and outlet and assuming no normal gradients in pressure at the inlet and outlet to assume face values are equal to centroid values. After this, GPU acceleration will be learned and implemented using CUDA.  
 
 As of August 5, 2026: the mesh logic has been implemented, and the physics logic is being developed. The mesh can be visualised using Matplotlib in Python. 
